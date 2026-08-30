@@ -12,23 +12,21 @@
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #222222;
-    background-color: #faf6f5;
-    line-height: 1.6;
+html {
+    scroll-behavior: smooth;
 }
 
-
-/* ---------- ODKAZY ---------- */
+body {
+    font-family: Arial, sans-serif;
+    color: #292323;
+    background-color: #fbf7f6;
+    line-height: 1.6;
+}
 
 a {
     color: inherit;
     text-decoration: none;
 }
-
-
-/* ---------- OBRÁZKY ---------- */
 
 img {
     display: block;
@@ -36,24 +34,37 @@ img {
 }
 
 
-/* ---------- HLAVNÍ KONTEJNER ---------- */
+/* ---------- KONTEJNER ---------- */
 
 .container {
     width: min(1200px, 90%);
     margin: 0 auto;
 }
 
-/* ---------- HLAVIČKA ---------- */
-
-.site-header {
-    padding: 25px 0;
-    background-color: #faf6f5;
+.narrow {
+    max-width: 850px;
 }
 
-.site-header .container {
+
+/* ========================================
+   HLAVIČKA
+   ======================================== */
+
+.site-header {
+    background-color: #fbf7f6;
+    border-bottom: 1px solid #eee3e1;
+    position: relative;
+    z-index: 10;
+}
+
+.header-inner {
+    min-height: 105px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 35px;
 }
 
 
@@ -62,18 +73,24 @@ img {
 .logo {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .logo-name {
-    font-size: 28px;
-    font-weight: 600;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: normal;
     letter-spacing: 1px;
 }
 
 .logo-subtitle {
-    font-size: 11px;
-    letter-spacing: 3px;
+    margin-top: 2px;
+
+    font-size: 10px;
+    letter-spacing: 4px;
     text-transform: uppercase;
+
+    color: #8d7775;
 }
 
 
@@ -81,11 +98,431 @@ img {
 
 .main-nav {
     display: flex;
-    gap: 35px;
+    align-items: center;
+    gap: 30px;
 }
 
 .main-nav a {
-    font-size: 14px;
-    letter-spacing: 1px;
+    position: relative;
+
+    font-size: 12px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+
+    color: #403737;
+
+    padding: 8px 0;
+
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #b56f7b;
+}
+
+.main-nav a.active {
+    color: #b56f7b;
+}
+
+.main-nav a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 1px;
+
+    background-color: #b56f7b;
+}
+
+
+/* ---------- JAZYKY ---------- */
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.language-active {
+    color: #b56f7b;
+    font-weight: bold;
+}
+
+.language-disabled {
+    color: #999;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+    min-height: 680px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(55, 37, 38, 0.18),
+            rgba(55, 37, 38, 0.28)
+        ),
+        linear-gradient(
+            135deg,
+            #d8b9b9,
+            #ead6d2
+        );
+
+    overflow: hidden;
+}
+
+
+/* ---------- HERO OVERLAY ---------- */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.02),
+            rgba(0, 0, 0, 0.12)
+        );
+}
+
+
+/* ---------- HERO TEXT ---------- */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: white;
+
+    padding: 40px;
+}
+
+.hero-small {
+    margin-bottom: 15px;
+
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(55px, 8vw, 105px);
+    font-weight: normal;
+
+    letter-spacing: 2px;
+
+    line-height: 1.1;
+}
+
+.hero-text {
+    margin-top: 8px;
+
+    font-size: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.hero-motto {
+    margin-top: 35px;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* ========================================
+   ÚVOD
+   ======================================== */
+
+.intro {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 20px;
+
+    color: #b56f7b;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.intro h2,
+.dogs-intro h2,
+.puppies-intro h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(35px, 5vw, 58px);
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+.intro-text {
+    max-width: 720px;
+
+    margin: 25px auto 0;
+
+    font-size: 16px;
+
+    color: #655858;
+}
+
+
+/* ---------- TLAČÍTKO ---------- */
+
+.button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #b56f7b;
+
+    color: #b56f7b;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b56f7b;
+    color: white;
+}
+
+
+/* ========================================
+   PSI
+   ======================================== */
+
+.dogs-intro {
+    padding: 110px 0;
+
+    background-color: #f3e7e5;
+
+    text-align: center;
+}
+
+.dog-links {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 55px;
+}
+
+.dog-link {
+    min-height: 230px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dfceca;
+
+    background-color: #fbf7f6;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dog-link:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(60, 40, 40, 0.08);
+}
+
+.dog-link span {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #493b3b;
+}
+
+.dog-link small {
+    margin-top: 10px;
+
+    color: #8d7775;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   ŠTĚŇÁTKA
+   ======================================== */
+
+.puppies-intro {
+    padding: 120px 0;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   PATIČKA
+   ======================================== */
+
+.site-footer {
+    padding: 45px 0;
+
+    background-color: #3e3333;
+
+    color: #eee4e2;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.site-footer p + p {
+    margin-top: 5px;
+
+    color: #bfaead;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 1000px) {
+
+    .header-inner {
+        flex-wrap: wrap;
+
+        padding: 25px 0;
+    }
+
+    .main-nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 18px 25px;
+    }
+
+    .language-switch {
+        margin-left: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .header-inner {
+        min-height: auto;
+    }
+
+    .logo-name {
+        font-size: 24px;
+    }
+
+    .logo-subtitle {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .main-nav {
+        justify-content: flex-start;
+
+        gap: 12px 18px;
+    }
+
+    .main-nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-small {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .hero-text {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .hero-motto {
+        font-size: 17px;
+    }
+
+    .intro,
+    .puppies-intro {
+        padding: 80px 0;
+    }
+
+    .dogs-intro {
+        padding: 80px 0;
+    }
+
+    .dog-links {
+        grid-template-columns: 1fr;
+    }
+
 }
