@@ -1,1 +1,44 @@
+/* ========================================
+   TINY MAJESTY
+   Main stylesheet
+   ======================================== */
 
+
+/* ---------- ZÁKLADNÍ NASTAVENÍ ---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #faf6f5;
+    line-height: 1.6;
+}
+
+
+/* ---------- ODKAZY ---------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ---------- OBRÁZKY ---------- */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ---------- HLAVNÍ KONTEJNER ---------- */
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
