@@ -1010,3 +1010,337 @@ img {
     }
 
 }
+
+/* ========================================
+   STRÁNKA NAŠI PSI
+   ======================================== */
+
+
+/* ---------- ÚVOD ---------- */
+
+.dogs-intro {
+    padding: 130px 0;
+    text-align: center;
+}
+
+.dogs-intro h2 {
+    margin-bottom: 40px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+.dogs-intro p:not(.section-label) {
+    max-width: 750px;
+
+    margin: 0 auto 20px;
+
+    color: #655858;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ---------- HLAVNÍ MYŠLENKA ---------- */
+
+.dogs-principle {
+    max-width: 750px;
+
+    margin: 60px auto 0;
+    padding: 35px;
+
+    background-color: #f3e7e5;
+
+    border: 1px solid #dfceca;
+}
+
+.dogs-principle span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.dogs-principle strong {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    font-weight: normal;
+
+    line-height: 1.4;
+
+    color: #493b3b;
+}
+
+
+/* ========================================
+   PROFILY
+   ======================================== */
+
+.dogs-list {
+    padding: 120px 0;
+
+    background-color: #f3e7e5;
+}
+
+.dog-profile {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+    margin-bottom: 130px;
+}
+
+.dog-profile:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- FOTKA ---------- */
+
+.dog-photo-placeholder {
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dfc9c6,
+            #f0e3df
+        );
+
+    color: rgba(80, 55, 55, 0.55);
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ---------- PROFIL ---------- */
+
+.dog-info {
+    padding: 20px 0;
+}
+
+.dog-info h2 {
+    margin-bottom: 30px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(48px, 6vw, 75px);
+
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    color: #493b3b;
+}
+
+.dog-description {
+    margin-bottom: 35px;
+
+    color: #655858;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- ÚDAJE ---------- */
+
+.dog-details {
+    display: flex;
+
+    gap: 50px;
+
+    margin-bottom: 40px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #dfceca;
+    border-bottom: 1px solid #dfceca;
+}
+
+.dog-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.dog-details span {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.dog-details strong {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    color: #493b3b;
+}
+
+
+/* ---------- KRYTÍ ---------- */
+
+.dog-breeding {
+    padding: 25px;
+
+    background-color: #fbf7f6;
+
+    border: 1px solid #dfceca;
+}
+
+.dog-breeding > span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #8b7070;
+}
+
+.dog-breeding p {
+    color: #655858;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   ZÁVĚR
+   ======================================== */
+
+.dogs-closing {
+    padding: 130px 0;
+
+    text-align: center;
+}
+
+.dogs-closing h2 {
+    margin-bottom: 35px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 5vw, 60px);
+
+    font-weight: normal;
+
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+.dogs-closing p:not(.section-label) {
+    margin-bottom: 20px;
+
+    color: #655858;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+.dogs-closing blockquote {
+    margin-top: 55px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(27px, 4vw, 42px);
+
+    font-style: italic;
+
+    line-height: 1.4;
+
+    color: #493b3b;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .dog-profile {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-bottom: 90px;
+    }
+
+    .dog-photo-placeholder {
+        min-height: 450px;
+    }
+
+    .dog-profile.reverse .dog-photo-placeholder {
+        order: 0;
+    }
+
+    .dog-profile.reverse .dog-info {
+        order: 1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dogs-intro,
+    .dogs-list,
+    .dogs-closing {
+        padding: 80px 0;
+    }
+
+    .dog-photo-placeholder {
+        min-height: 350px;
+    }
+
+    .dogs-principle {
+        padding: 25px 20px;
+    }
+
+    .dog-details {
+        gap: 30px;
+    }
+
+}
