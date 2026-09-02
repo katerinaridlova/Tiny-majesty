@@ -1668,3 +1668,360 @@ img {
     }
 
 }
+/* ========================================
+   STRÁNKA FENY
+   ======================================== */
+
+.females-hero {
+    min-height: 620px;
+}
+
+.females-hero .about-hero-placeholder {
+    background:
+        linear-gradient(
+            135deg,
+            #d9c0bf,
+            #eadbd7
+        );
+}
+
+
+/* ---------- ÚVOD ---------- */
+
+.females-intro {
+    padding: 130px 0;
+    text-align: center;
+    background-color: #fbf7f6;
+}
+
+.females-intro h2 {
+    max-width: 850px;
+    margin: 0 auto 40px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+.females-intro p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto 20px;
+
+    color: #655858;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ---------- HLAVNÍ MYŠLENKA ---------- */
+
+.females-principle {
+    max-width: 750px;
+    margin: 60px auto 0;
+    padding: 35px;
+
+    background-color: #f3e7e5;
+    border: 1px solid #dfceca;
+}
+
+.females-principle span {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.females-principle strong {
+    display: block;
+
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.4;
+
+    color: #493b3b;
+}
+
+
+/* ========================================
+   PROFILY FEN
+   ======================================== */
+
+.females-list {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+}
+
+
+/* ---------- ZÁKLAD PROFILU ---------- */
+
+.female-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: center;
+
+    margin-bottom: 130px;
+}
+
+.female-profile:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- OBRÁZEK ---------- */
+
+.female-photo-placeholder {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dfc9c6,
+            #f0e3df
+        );
+
+    color: rgba(80, 55, 55, 0.55);
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+/* ---------- INFORMACE ---------- */
+
+.female-info {
+    padding: 20px 0;
+}
+
+.female-info h2 {
+    margin-bottom: 30px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 75px);
+    font-weight: normal;
+    line-height: 1.1;
+
+    color: #493b3b;
+}
+
+.female-description {
+    margin-bottom: 35px;
+
+    color: #655858;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ---------- ÚDAJE ---------- */
+
+.female-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin: 35px 0 20px;
+    padding: 25px 0;
+
+    border-top: 1px solid #dfceca;
+    border-bottom: 1px solid #dfceca;
+}
+
+.female-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.female-details span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.female-details strong {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+
+    color: #493b3b;
+}
+
+
+/* ---------- ZDRAVÍ ---------- */
+
+.female-health {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    margin-bottom: 45px;
+}
+
+.female-health div {
+    padding: 18px 20px;
+
+    background-color: #fbf7f6;
+    border: 1px solid #dfceca;
+}
+
+.female-health span {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.female-health strong {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+
+    color: #493b3b;
+}
+
+
+/* ---------- KONEC CHOVNÉ KARIÉRY ---------- */
+
+.female-retirement {
+    padding: 28px;
+
+    background-color: #fbf7f6;
+    border: 1px solid #dfceca;
+}
+
+.female-retirement > span {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #8b7070;
+}
+
+.female-retirement p {
+    margin-bottom: 12px;
+
+    color: #655858;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.female-retirement p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   ZÁVĚR
+   ======================================== */
+
+.females-closing {
+    padding: 130px 0;
+
+    text-align: center;
+    background-color: #eadbd7;
+}
+
+.females-closing h2 {
+    max-width: 850px;
+    margin: 0 auto 35px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: normal;
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+.females-closing p:not(.section-label) {
+    max-width: 700px;
+    margin: 0 auto 20px;
+
+    color: #5f5151;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.females-closing blockquote {
+    max-width: 850px;
+    margin: 55px auto 0;
+
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 4vw, 42px);
+    font-style: italic;
+    line-height: 1.4;
+
+    color: #493b3b;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .female-profile {
+        grid-template-columns: 1fr;
+        gap: 55px;
+        margin-bottom: 90px;
+    }
+
+    .female-photo-placeholder {
+        min-height: 450px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .females-hero {
+        min-height: 500px;
+    }
+
+    .females-intro,
+    .females-list,
+    .females-closing {
+        padding: 80px 0;
+    }
+
+    .female-photo-placeholder {
+        min-height: 350px;
+    }
+
+    .female-details {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .female-health {
+        grid-template-columns: 1fr;
+    }
+
+    .females-principle {
+        padding: 25px 20px;
+    }
+
+}
