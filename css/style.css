@@ -2349,3 +2349,57 @@ img {
     }
 
 }
+/* ========================================
+   ŠTĚŇÁTKA – HERO
+   ======================================== */
+
+.puppies-hero {
+    position: relative;
+}
+
+
+/*
+   Zatím používáme jemný placeholder.
+   Až budeš mít vlastní fotografii,
+   nahradíme ho skutečnou fotografií.
+*/
+
+.puppies-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #d9c1bd,
+            #ead8d4
+        );
+}
+
+
+.puppies-hero .about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+.puppies-hero .about-hero-content h1 {
+    margin-bottom: 18px;
+}
+
+
+.puppies-hero .about-hero-content p:not(.section-label) {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* ---------- MOBIL ---------- */
+
+@media (max-width: 600px) {
+
+    .puppies-hero .about-hero-content p:not(.section-label) {
+        font-size: 18px;
+    }
+
+}
