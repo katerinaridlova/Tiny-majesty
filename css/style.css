@@ -2349,60 +2349,7 @@ img {
     }
 
 }
-/* ========================================
-   ŠTĚŇÁTKA – HERO
-   ======================================== */
 
-.puppies-hero {
-    position: relative;
-}
-
-
-/*
-   Zatím používáme jemný placeholder.
-   Až budeš mít vlastní fotografii,
-   nahradíme ho skutečnou fotografií.
-*/
-
-.puppies-hero {
-    background:
-        linear-gradient(
-            135deg,
-            #d9c1bd,
-            #ead8d4
-        );
-}
-
-
-.puppies-hero .about-hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-
-.puppies-hero .about-hero-content h1 {
-    margin-bottom: 18px;
-}
-
-
-.puppies-hero .about-hero-content p:not(.section-label) {
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-style: italic;
-
-    color: rgba(255, 255, 255, 0.95);
-}
-
-
-/* ---------- MOBIL ---------- */
-
-@media (max-width: 600px) {
-
-    .puppies-hero .about-hero-content p:not(.section-label) {
-        font-size: 18px;
-    }
-
-}
 /* ========================================
    ŠTĚŇÁTKA – HLAVNÍ NADPIS SEKCE
    ======================================== */
@@ -2435,29 +2382,31 @@ img {
    ŠTĚŇÁTKA – MOTTO
    ======================================== */
 
-.puppies-support h2 {
-    max-width: 900px;
-    margin: 0 auto 35px;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 52px;
-    line-height: 1.15;
-    font-weight: 400;
-    letter-spacing: -0.5px;
+.puppies-support {
+    padding: 130px 0;
+    text-align: center;
 }
 
-@media (max-width: 800px) {
+.puppies-support h2 {
+    max-width: 1000px;
+    margin: 0 auto 35px;
 
-    .puppies-support h2 {
-        font-size: 42px;
-    }
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: normal;
+    line-height: 1.15;
 
+    color: #493b3b;
 }
 
 @media (max-width: 600px) {
 
+    .puppies-support {
+        padding: 90px 0;
+    }
+
     .puppies-support h2 {
-        font-size: 34px;
+        font-size: 38px;
     }
 
 }
