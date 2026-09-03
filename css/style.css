@@ -2107,3 +2107,245 @@ img {
     }
 
 }
+/* ========================================
+   ŠTĚŇÁTKA – HLAVNÍ STRÁNKA
+   ======================================== */
+
+.puppies-hero {
+    padding: 110px 0 100px;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3e5e1,
+            #f8efec
+        );
+}
+
+.puppies-hero h1 {
+    margin-bottom: 18px;
+}
+
+.puppies-hero-text {
+    max-width: 620px;
+    margin: 0 auto;
+
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.6;
+
+    color: #6f5955;
+}
+
+
+.puppies-intro-section {
+    padding: 100px 0;
+}
+
+.puppies-intro-section h2 {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.puppies-intro-section p:not(.section-label) {
+    max-width: 760px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   AKTUÁLNÍ A PLÁNOVANÉ VRHY
+   ======================================== */
+
+.puppies-feature {
+    padding: 90px 0;
+
+    background: #f8f1ee;
+}
+
+.puppies-feature-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+.puppies-feature-text h2 {
+    margin-bottom: 24px;
+}
+
+.puppies-feature-text p:not(.section-label) {
+    max-width: 500px;
+    margin-bottom: 32px;
+}
+
+.puppies-feature-photo {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dfc9c6,
+            #f0e3df
+        );
+
+    color: rgba(80, 55, 55, 0.55);
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   INFORMAČNÍ KARTY
+   ======================================== */
+
+.puppies-info-section {
+    padding: 110px 0;
+}
+
+.puppies-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.puppies-info-card {
+    display: block;
+
+    padding: 45px;
+
+    text-decoration: none;
+
+    background: #faf7f5;
+
+    border: 1px solid #eee2de;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.puppies-info-card:hover {
+    transform: translateY(-4px);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(80, 55, 55, 0.08);
+}
+
+.puppies-info-card h2 {
+    margin-bottom: 18px;
+}
+
+.puppies-info-card p:not(.section-label) {
+    margin-bottom: 28px;
+
+    color: #6f625f;
+
+    line-height: 1.7;
+}
+
+.puppies-card-link {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #8d6f6b;
+}
+
+
+/* ========================================
+   PODPORA PO ODCHODU
+   ======================================== */
+
+.puppies-support {
+    padding: 110px 0;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ead9d5,
+            #f5eae7
+        );
+}
+
+.puppies-support h2 {
+    margin-bottom: 30px;
+}
+
+.puppies-support p:not(.section-label) {
+    max-width: 700px;
+    margin: 0 auto 20px;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .puppies-hero {
+        padding: 80px 0;
+    }
+
+    .puppies-feature-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .puppies-feature-photo {
+        min-height: 400px;
+    }
+
+    .puppies-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .puppies-hero {
+        padding: 65px 0;
+    }
+
+    .puppies-hero-text {
+        font-size: 19px;
+    }
+
+    .puppies-intro-section,
+    .puppies-info-section,
+    .puppies-support {
+        padding: 75px 0;
+    }
+
+    .puppies-feature {
+        padding: 70px 0;
+    }
+
+    .puppies-feature-photo {
+        min-height: 350px;
+    }
+
+    .puppies-info-card {
+        padding: 30px;
+    }
+
+}
