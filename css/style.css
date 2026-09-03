@@ -2403,3 +2403,61 @@ img {
     }
 
 }
+/* ========================================
+   ŠTĚŇÁTKA – HLAVNÍ NADPIS SEKCE
+   ======================================== */
+
+.puppies-feature-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 800px) {
+
+    .puppies-feature-text h2 {
+        font-size: 38px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .puppies-feature-text h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* ========================================
+   ŠTĚŇÁTKA – MOTTO
+   ======================================== */
+
+.puppies-support h2 {
+    max-width: 900px;
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 800px) {
+
+    .puppies-support h2 {
+        font-size: 42px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .puppies-support h2 {
+        font-size: 34px;
+    }
+
+}
