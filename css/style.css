@@ -2025,3 +2025,85 @@ img {
     }
 
 }
+/* ========================================
+   GALERIE FEN
+   ======================================== */
+
+.female-gallery {
+    width: 100%;
+}
+
+.female-main-photo {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dfc9c6,
+            #f0e3df
+        );
+
+    color: rgba(80, 55, 55, 0.55);
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.female-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.female-thumb {
+    min-height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7d5d2,
+            #f4e9e6
+        );
+
+    color: rgba(80, 55, 55, 0.5);
+
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- MOBIL ---------- */
+
+@media (max-width: 800px) {
+
+    .female-main-photo {
+        min-height: 480px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .female-main-photo {
+        min-height: 380px;
+    }
+
+    .female-gallery-thumbs {
+        gap: 7px;
+    }
+
+    .female-thumb {
+        min-height: 90px;
+    }
+
+}
