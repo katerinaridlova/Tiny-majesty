@@ -5949,4 +5949,295 @@ img {
         padding: 45px 0;
     }
 }
+/* =========================================================
+   CENA ŠTĚŇÁTKA
+   ========================================================= */
 
+.price-hero {
+    min-height: 620px;
+}
+
+
+/* ÚVOD */
+
+.price-intro {
+    padding: 120px 0 100px;
+    background-color: #fffdfc;
+    text-align: center;
+}
+
+.price-intro h2 {
+    max-width: 850px;
+    margin: 15px auto 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-intro p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.price-highlight {
+    max-width: 760px;
+    margin: 40px auto 0;
+    padding: 35px;
+    border-top: 1px solid #dfceca;
+    border-bottom: 1px solid #dfceca;
+}
+
+.price-highlight span {
+    display: block;
+    margin-bottom: 12px;
+    color: #9b7772;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.price-highlight strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+
+/* CO JE V CENĚ */
+
+.price-included {
+    padding: 110px 0;
+    background-color: #faf7f5;
+}
+
+.price-section-heading {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.price-section-heading h2 {
+    margin: 15px 0 0;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-items {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background-color: #dfceca;
+}
+
+.price-item {
+    padding: 40px 45px;
+    background-color: #fffdfc;
+}
+
+.price-item span {
+    display: block;
+    margin-bottom: 15px;
+    color: #9b7772;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+}
+
+.price-item h3 {
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.price-item p {
+    margin: 0;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* HLEDÁTE NEJNIŽŠÍ CENU */
+
+.price-choice {
+    padding: 120px 0;
+    background-color: #fffdfc;
+    text-align: center;
+}
+
+.price-choice h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-choice p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* JEDNOTLIVÉ ŠTĚNĚ */
+
+.price-individual {
+    padding: 110px 0;
+    background-color: #faf7f5;
+}
+
+.price-individual-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price-individual h2 {
+    max-width: 800px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-individual p {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* REZERVAČNÍ POPLATEK */
+
+.price-reservation {
+    padding: 110px 0;
+    background-color: #fffdfc;
+}
+
+.price-reservation-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.price-reservation h2 {
+    max-width: 800px;
+    margin: 15px 0 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-reservation p {
+    max-width: 720px;
+    margin-bottom: 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.price-reservation-box {
+    margin-top: 35px;
+    padding: 30px 35px;
+    border-left: 2px solid #c9aaa4;
+    background-color: #faf7f5;
+}
+
+.price-reservation-box p {
+    margin-bottom: 12px;
+}
+
+.price-reservation-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ZÁVĚR */
+
+.price-closing {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+    text-align: center;
+}
+
+.price-closing h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.price-closing p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.price-closing .button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 800px) {
+
+    .price-intro,
+    .price-included,
+    .price-choice,
+    .price-individual,
+    .price-reservation,
+    .price-closing {
+        padding: 90px 0;
+    }
+
+    .price-items {
+        grid-template-columns: 1fr;
+    }
+
+    .price-item {
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .price-intro,
+    .price-included,
+    .price-choice,
+    .price-individual,
+    .price-reservation,
+    .price-closing {
+        padding: 70px 0;
+    }
+
+    .price-highlight {
+        padding: 30px 20px;
+    }
+
+    .price-highlight strong {
+        font-size: 32px;
+    }
+}
