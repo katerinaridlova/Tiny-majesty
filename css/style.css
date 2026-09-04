@@ -4392,7 +4392,7 @@ img {
 
 .c-litter-hero {
     position: relative;
-    min-height: 720px;
+    min-height: 620px;
     display: flex;
     align-items: flex-end;
     background-color: #f3e7e5;
@@ -4426,7 +4426,7 @@ img {
 
     background: linear-gradient(
         to top,
-        rgba(73, 59, 59, 0.55),
+        rgba(73, 59, 59, 0.38),
         transparent
     );
 
