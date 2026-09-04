@@ -2410,3 +2410,526 @@ img {
     }
 
 }
+/* =========================================================
+   VRHY
+   ========================================================= */
+
+.litters-intro {
+    padding: 110px 0;
+    text-align: center;
+    background-color: #f3e7e5;
+}
+
+.litters-intro h2 {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.litters-intro p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   NADPIS SEKCE
+   --------------------------------------------------------- */
+
+.litters-section-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.litters-section-heading h2 {
+    margin-top: 10px;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+
+/* ---------------------------------------------------------
+   AKTUÁLNÍ VRHY
+   --------------------------------------------------------- */
+
+.litters-current {
+    padding: 120px 0;
+    background-color: #faf7f5;
+}
+
+.litter-card {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    background-color: white;
+    border: 1px solid #eee2de;
+}
+
+.litter-card-photo {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #eadbd8,
+        #f7efec
+    );
+    color: #8c7773;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.litter-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+}
+
+.litter-card-content h3 {
+    margin: 10px 0 10px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 60px);
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.litter-date {
+    margin-bottom: 25px;
+    color: #8a7470;
+    font-size: 15px;
+}
+
+.litter-card-content > p:not(.section-label):not(.litter-date) {
+    max-width: 420px;
+    margin-bottom: 30px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   DETAIL VRHU
+   --------------------------------------------------------- */
+
+.litter-detail {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.litter-detail-archive {
+    background-color: #faf7f5;
+}
+
+.litter-detail-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.litter-detail-heading h2 {
+    margin: 10px 0 15px;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 6vw, 75px);
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.litter-detail-heading > p:last-child {
+    color: #8a7470;
+}
+
+
+/* ---------------------------------------------------------
+   GALERIE VRHU
+   --------------------------------------------------------- */
+
+.litter-gallery {
+    width: 100%;
+}
+
+.litter-main-photo {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #eadbd8,
+        #f7efec
+    );
+    color: #8c7773;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.litter-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.litter-thumb {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #f2e7e4,
+        #faf5f2
+    );
+    color: #927e79;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   RODIČE
+   --------------------------------------------------------- */
+
+.litter-parents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.litter-parent {
+    text-align: center;
+}
+
+.litter-parent-photo {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: linear-gradient(
+        135deg,
+        #eadbd8,
+        #f7efec
+    );
+    color: #8c7773;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.litter-parent h3 {
+    margin: 8px auto;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.litter-parent p:not(.section-label) {
+    color: #766563;
+}
+
+
+/* ---------------------------------------------------------
+   ŠTĚŇÁTKA VE VRHU
+   --------------------------------------------------------- */
+
+.puppies-list {
+    margin-top: 110px;
+}
+
+.puppies-list-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.puppies-list-heading h3 {
+    margin-top: 8px;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.puppy-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background-color: #faf7f5;
+    border: 1px solid #eee2de;
+}
+
+.puppy-photo {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #eadbd8,
+        #f7efec
+    );
+    color: #8c7773;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.puppy-info {
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.puppy-info h3 {
+    margin: 8px 0 40px;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.puppy-info dl {
+    margin: 0;
+}
+
+.puppy-info dl > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e7dcd8;
+}
+
+.puppy-info dt {
+    color: #8a7470;
+    font-size: 13px;
+}
+
+.puppy-info dd {
+    margin: 0;
+    color: #493b3b;
+}
+
+
+/* ---------------------------------------------------------
+   ARCHIV
+   --------------------------------------------------------- */
+
+.litters-archive {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+}
+
+.litter-archive-card {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    background-color: #fff;
+    border: 1px solid #e5d6d2;
+}
+
+.litter-archive-photo {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #e7d9d6,
+        #f7efec
+    );
+    color: #8c7773;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.litter-archive-content {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.litter-archive-content h3 {
+    margin: 8px 0 8px;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.litter-archive-content > .litter-date {
+    margin-bottom: 35px;
+}
+
+.litter-parents-short {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+.litter-parents-short span {
+    display: block;
+    margin-bottom: 7px;
+    color: #9a817c;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.litter-parents-short strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.litter-parents-short small {
+    display: block;
+    margin-top: 4px;
+    color: #766563;
+}
+
+.litter-home {
+    margin-bottom: 30px;
+    color: #655858;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   ZÁVĚR
+   --------------------------------------------------------- */
+
+.litters-closing {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.litters-closing h2 {
+    max-width: 800px;
+    margin: 10px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.litters-closing p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .litter-card,
+    .puppy-card,
+    .litter-archive-card {
+        grid-template-columns: 1fr;
+    }
+
+    .litter-card-photo {
+        min-height: 400px;
+    }
+
+    .litter-card-content {
+        padding: 45px 30px;
+    }
+
+    .litter-main-photo {
+        min-height: 480px;
+    }
+
+    .litter-gallery-thumbs {
+        gap: 7px;
+    }
+
+    .litter-thumb {
+        min-height: 100px;
+    }
+
+    .litter-parents {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .litter-parent-photo {
+        min-height: 400px;
+    }
+
+    .puppy-photo {
+        min-height: 400px;
+    }
+
+    .puppy-info {
+        padding: 45px 30px;
+    }
+
+    .litter-archive-photo {
+        min-height: 380px;
+    }
+
+    .litter-archive-content {
+        padding: 45px 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .litters-intro,
+    .litters-current,
+    .litter-detail,
+    .litters-archive,
+    .litters-closing {
+        padding: 85px 0;
+    }
+
+    .litter-card-photo {
+        min-height: 320px;
+    }
+
+    .litter-main-photo {
+        min-height: 380px;
+    }
+
+    .litter-parent-photo {
+        min-height: 330px;
+    }
+
+    .puppy-photo {
+        min-height: 330px;
+    }
+
+    .puppy-info dl > div {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .litter-parents-short {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .litter-archive-photo {
+        min-height: 300px;
+    }
+
+}
