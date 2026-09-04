@@ -3240,3 +3240,343 @@ img {
     }
 
 }
+/* =========================================================
+   NAŠE VRHY
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PLÁNOVOVANÉ VRHY
+   --------------------------------------------------------- */
+
+.planned-litters {
+    padding: 110px 0;
+    background-color: #faf7f5;
+}
+
+.planned-litters-inner {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.planned-litters h2 {
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.planned-litters p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* hlavní informační karta */
+
+.planned-litter-card {
+    max-width: 850px;
+    margin: 50px auto 0;
+    padding: 45px;
+    background-color: #f3e7e5;
+    border: 1px solid #dfceca;
+    text-align: center;
+}
+
+.planned-litter-card h3 {
+    margin: 5px 0 20px;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.planned-litter-card p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   SEKCE VRHŮ
+   --------------------------------------------------------- */
+
+.litters-section {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+}
+
+.litters-section-alt {
+    background-color: #faf7f5;
+}
+
+
+/* nadpis konkrétního vrhu */
+
+.litter-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.litter-heading h2 {
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: normal;
+    line-height: 1.15;
+    color: #493b3b;
+}
+
+.litter-heading > p:last-child {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #655858;
+}
+
+
+/* ---------------------------------------------------------
+   KARTY ŠTĚŇÁTEK
+   --------------------------------------------------------- */
+
+.puppies-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* jednotlivá karta */
+
+.puppy-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    background-color: #faf7f5;
+    border: 1px solid #e7d9d5;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.puppy-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(73, 59, 59, 0.08);
+}
+
+
+/* fotografie */
+
+.puppy-card-photo {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        #ead7d2,
+        #f4e8e4
+    );
+    color: #8b7772;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* informace */
+
+.puppy-card-content {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.puppy-card-content h3 {
+    margin: 5px 0 30px;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+
+/* údaje */
+
+.puppy-card-content dl {
+    margin: 0;
+}
+
+.puppy-card-content dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eadeda;
+}
+
+.puppy-card-content dt {
+    color: #8a7975;
+    font-size: 14px;
+}
+
+.puppy-card-content dd {
+    margin: 0;
+    color: #493b3b;
+    text-align: right;
+}
+
+
+/* stav štěněte */
+
+.puppy-status {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 25px;
+    padding: 9px 15px;
+    border: 1px solid #d8c2bc;
+    color: #725d58;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------------------------------------------------------
+   ODKAZ NA DETAIL VRHU
+   --------------------------------------------------------- */
+
+.litter-link {
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------
+   PŘEDCHOZÍ VRHY
+   --------------------------------------------------------- */
+
+.past-litter-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #f3e7e5;
+    border: 1px solid #e4d4d0;
+}
+
+.past-litter-card h3 {
+    margin: 5px 0 15px;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+.past-litter-card p:not(.section-label) {
+    max-width: 600px;
+    margin: 0;
+    color: #655858;
+    line-height: 1.7;
+}
+
+.text-link {
+    flex-shrink: 0;
+    color: #493b3b;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .planned-litters {
+        padding: 90px 0;
+    }
+
+    .planned-litter-card {
+        padding: 35px;
+    }
+
+    .litters-section {
+        padding: 90px 0;
+    }
+
+    .puppy-card {
+        grid-template-columns: 1fr;
+    }
+
+    .puppy-card-photo {
+        min-height: 300px;
+    }
+
+    .puppy-card-content {
+        padding: 35px;
+    }
+
+    .past-litter-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .planned-litter-card {
+        padding: 30px;
+    }
+
+    .litter-heading {
+        margin-bottom: 40px;
+    }
+
+    .puppy-card-photo {
+        min-height: 240px;
+    }
+
+    .puppy-card-content {
+        padding: 28px;
+    }
+
+    .puppy-card-content h3 {
+        font-size: 34px;
+    }
+
+    .puppy-card-content dl > div {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .puppy-card-content dd {
+        text-align: left;
+    }
+
+    .past-litter-card {
+        padding: 30px;
+    }
+
+}
