@@ -3580,3 +3580,184 @@ img {
     }
 
 }
+/* =========================================================
+   VRHY – UPRAVENÉ ROZLOŽENÍ
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   PLÁNOVANÉ VRHY – JEN JEMNÁ INFORMAČNÍ LIŠTA
+   --------------------------------------------------------- */
+
+.planned-litters-info {
+    padding: 35px 0;
+    background-color: #faf7f5;
+}
+
+.planned-info-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 22px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    border-top: 1px solid #e4d4d0;
+    border-bottom: 1px solid #e4d4d0;
+}
+
+.planned-info-inner .section-label {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.planned-info-inner p:last-child {
+    margin: 0;
+    color: #655858;
+    line-height: 1.6;
+}
+
+
+
+/* ---------------------------------------------------------
+   AKTUÁLNÍ VRH – VĚTŠÍ A VÝRAZNĚJŠÍ
+   --------------------------------------------------------- */
+
+.litters-section {
+    padding: 140px 0;
+}
+
+.litter-heading {
+    margin-bottom: 70px;
+}
+
+
+/* ---------------------------------------------------------
+   KARTY ŠTĚŇÁTEK
+   --------------------------------------------------------- */
+
+.puppies-list {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.puppy-card {
+    grid-template-columns: 450px 1fr;
+}
+
+
+/* větší prostor pro fotografii */
+
+.puppy-card-photo {
+    min-height: 400px;
+}
+
+
+/* trochu vzdušnější informace */
+
+.puppy-card-content {
+    padding: 55px;
+}
+
+
+.puppy-card-content h3 {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+
+
+/* ---------------------------------------------------------
+   ODKAZ NA DETAIL VRHU
+   --------------------------------------------------------- */
+
+.litter-link {
+    margin-top: 55px;
+}
+
+
+
+/* ---------------------------------------------------------
+   PŘEDCHOZÍ VRHY
+   --------------------------------------------------------- */
+
+.litters-section-alt {
+    padding: 100px 0;
+}
+
+
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .planned-litters-info {
+        padding: 30px 0;
+    }
+
+    .planned-info-inner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    .litters-section {
+        padding: 100px 0;
+    }
+
+
+    .puppy-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .puppy-card-photo {
+        min-height: 380px;
+    }
+
+
+    .puppy-card-content {
+        padding: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .litters-section {
+        padding: 80px 0;
+    }
+
+
+    .litter-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .puppy-card-photo {
+        min-height: 280px;
+    }
+
+
+    .puppy-card-content {
+        padding: 30px;
+    }
+
+
+    .puppy-card-content h3 {
+        font-size: 38px;
+    }
+
+}
