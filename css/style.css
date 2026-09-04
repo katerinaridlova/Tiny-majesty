@@ -5702,3 +5702,60 @@ img {
         padding: 60px 0;
     }
 }
+/* ========================================
+   REZERVACE – VĚK ODCHODU
+   ======================================== */
+
+.reservation-age {
+    padding: 0;
+    background-color: #fffdfc;
+    text-align: left;
+}
+
+.reservation-age .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservation-age .reservation-age-inner {
+    padding: 65px 0;
+    border-top: 1px solid #dfceca;
+}
+
+.reservation-age h2 {
+    max-width: 700px;
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.reservation-age p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 0 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.reservation-age .age-highlight {
+    max-width: 700px;
+    margin-top: 35px;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.7;
+    color: #493b3b;
+}
+
+@media (max-width: 800px) {
+    .reservation-age .reservation-age-inner {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .reservation-age .reservation-age-inner {
+        padding: 45px 0;
+    }
+}
