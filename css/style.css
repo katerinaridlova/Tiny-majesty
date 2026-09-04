@@ -3761,3 +3761,87 @@ img {
     }
 
 }
+/* =========================================================
+   PLÁNOVANÉ VRHY
+   ========================================================= */
+
+.planned-litters {
+    padding: 100px 0;
+    background-color: #faf7f5;
+}
+
+
+.planned-litter-box {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 70px;
+
+    text-align: center;
+
+    border: 1px solid #dfceca;
+    background-color: #f3e7e5;
+}
+
+
+/* výrazný nadpis sekce */
+
+.planned-litter-box .section-label {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+
+/* Jaro 2027 */
+
+.planned-litter-box h2 {
+    margin: 0 0 25px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+
+    color: #493b3b;
+}
+
+
+/* text */
+
+.planned-litter-box p:not(.section-label) {
+    max-width: 680px;
+    margin: 0 auto 18px;
+
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* poslední odstavec */
+
+.planned-litter-box p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .planned-litters {
+        padding: 70px 0;
+    }
+
+    .planned-litter-box {
+        padding: 40px 25px;
+    }
+
+    .planned-litter-box .section-label {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+}
