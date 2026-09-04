@@ -5759,3 +5759,193 @@ img {
         padding: 45px 0;
     }
 }
+/* =========================================================
+   ČEKACÍ LISTINA
+   ========================================================= */
+
+.waitlist-hero {
+    min-height: 620px;
+}
+
+.waitlist-intro {
+    padding: 120px 0 100px;
+    background-color: #fffdfc;
+    text-align: center;
+}
+
+.waitlist-intro h2 {
+    max-width: 850px;
+    margin: 15px auto 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.waitlist-intro p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.waitlist-intro .highlight {
+    max-width: 780px;
+    margin: 35px auto 0;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.7;
+    color: #493b3b;
+}
+
+
+/* =========================================================
+   KROKY
+   ========================================================= */
+
+.waitlist-steps {
+    padding: 110px 0;
+    background-color: #faf7f5;
+}
+
+.waitlist-step {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 65px 0;
+    border-top: 1px solid #dfceca;
+}
+
+.waitlist-step:last-child {
+    border-bottom: 1px solid #dfceca;
+}
+
+.waitlist-step-number {
+    margin-bottom: 18px;
+    color: #9b7772;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.waitlist-step h2 {
+    max-width: 720px;
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.waitlist-step p {
+    max-width: 720px;
+    margin-bottom: 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.waitlist-step strong {
+    color: #493b3b;
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   ZÁVĚR
+   ========================================================= */
+
+.waitlist-closing {
+    padding: 120px 0;
+    background-color: #fffdfc;
+    text-align: center;
+}
+
+.waitlist-closing h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.waitlist-closing p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA – CHCETE SE PŘIDAT?
+   ========================================================= */
+
+.waitlist-cta {
+    padding: 100px 0;
+    background-color: #f3e7e5;
+    text-align: center;
+}
+
+.waitlist-cta h2 {
+    max-width: 800px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.waitlist-cta p:not(.section-label) {
+    max-width: 680px;
+    margin: 0 auto 25px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.waitlist-cta .button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   MOBIL
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .waitlist-intro,
+    .waitlist-steps,
+    .waitlist-closing {
+        padding: 90px 0;
+    }
+
+    .waitlist-cta {
+        padding: 80px 0;
+    }
+
+    .waitlist-step {
+        padding: 50px 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .waitlist-intro,
+    .waitlist-steps,
+    .waitlist-closing {
+        padding: 70px 0;
+    }
+
+    .waitlist-cta {
+        padding: 70px 0;
+    }
+
+    .waitlist-step {
+        padding: 45px 0;
+    }
+}
