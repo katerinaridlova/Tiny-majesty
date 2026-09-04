@@ -5949,3 +5949,17 @@ img {
         padding: 45px 0;
     }
 }
+
+/* Úprava hero pro čekací listinu */
+.waitlist-hero .about-hero-image {
+    background: linear-gradient(
+        135deg,
+        #b9a5a1 0%,
+        #8c7370 50%,
+        #6f5b59 100%
+    );
+}
+
+.waitlist-hero .about-hero-overlay {
+    background: rgba(45, 35, 34, 0.25);
+}
