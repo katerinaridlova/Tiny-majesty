@@ -1,451 +1,840 @@
-/* ========================================
-   VRH C – DETAIL VRHU
-   ======================================== */
-
-.litter-detail-hero {
-    min-height: 680px;
-}
-
-
-/* ========================================
-   ZÁKLADNÍ INFORMACE O VRHU
-   ======================================== */
-
-.litter-detail-intro {
-    padding: 120px 0;
-    background-color: #fffdfc;
-    text-align: center;
-}
-
-.litter-detail-intro .section-label {
-    margin-bottom: 25px;
-}
-
-.litter-detail-intro h2 {
-    margin: 0 0 30px;
-    font-family: Georgia, serif;
-    font-size: clamp(45px, 5vw, 65px);
-    font-weight: normal;
-    line-height: 1.2;
-    color: #493b3b;
-}
-
-.litter-detail-intro p:not(.section-label) {
-    max-width: 700px;
-    margin: 0 auto;
-    color: #655858;
-    line-height: 1.9;
-}
-
-
-/* ========================================
-   NADPIS SEKCE
-   ======================================== */
-
-.litter-section-heading {
-    max-width: 800px;
-    margin: 0 auto 65px;
-    text-align: center;
-}
-
-.litter-section-heading .section-label {
-    margin-bottom: 20px;
-}
-
-.litter-section-heading h2 {
-    margin: 0;
-    font-family: Georgia, serif;
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: normal;
-    line-height: 1.2;
-    color: #493b3b;
-}
-
-
-/* ========================================
-   RODIČE VRHU
-   ======================================== */
-
-.litter-parents {
-    padding: 120px 0;
-    background-color: #faf7f5;
-}
-
-.parents-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-}
-
-.parent-card {
-    background-color: #fffdfc;
-    border: 1px solid #eadeda;
-}
-
-.parent-photo {
-    min-height: 480px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-        135deg,
-        #f2e5e2,
-        #e9d7d3
-    );
-    color: #806f6b;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.parent-content {
-    padding: 45px;
-}
-
-.parent-content .section-label {
-    margin-bottom: 15px;
-}
-
-.parent-name {
-    margin: 0 0 30px;
-    font-family: Georgia, serif;
-    font-size: 42px;
-    font-weight: normal;
-    color: #493b3b;
-}
-
-.parent-content p {
-    margin: 0 0 25px;
-    color: #655858;
-    line-height: 1.8;
-}
-
-.parent-details {
-    margin: 30px 0 0;
-}
-
-.parent-details div {
-    padding: 13px 0;
-    border-bottom: 1px solid #eadeda;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.parent-details span {
-    color: #887977;
-}
-
-.parent-details strong {
-    color: #493b3b;
-    font-weight: 500;
-    text-align: right;
-}
-
-.parent-link {
-    display: inline-block;
-    margin-top: 30px;
-    color: #493b3b;
-    text-decoration: none;
-    border-bottom: 1px solid #c9aaa4;
-    padding-bottom: 5px;
-    transition: opacity 0.3s ease;
-}
-
-.parent-link:hover {
-    opacity: 0.65;
-}
-
-
-/* ========================================
-   ŠTĚŇÁTKA VRHU
-   ======================================== */
-
-.litter-puppies {
-    padding: 140px 0;
-    background-color: #fffdfc;
-}
-
-.litter-puppy-detail {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-}
-
-.litter-puppy-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.litter-puppy-main-photo {
-    min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-        135deg,
-        #f3e8e5,
-        #e8d6d2
-    );
-    color: #806f6b;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.litter-puppy-thumbs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-.litter-puppy-thumbs > div {
-    min-height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3e7e5;
-    color: #806f6b;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.litter-puppy-info {
-    padding: 25px 0;
-}
-
-.litter-puppy-info .section-label {
-    margin-bottom: 18px;
-}
-
-.litter-puppy-info h3 {
-    margin: 0 0 35px;
-    font-family: Georgia, serif;
-    font-size: clamp(42px, 5vw, 58px);
-    font-weight: normal;
-    color: #493b3b;
-}
-
-.litter-puppy-info > p {
-    color: #655858;
-    line-height: 1.8;
-}
-
-.litter-puppy-info dl {
-    margin: 40px 0;
-}
-
-.litter-puppy-info dl div {
-    padding: 15px 0;
-    border-bottom: 1px solid #eadeda;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.litter-puppy-info dt {
-    color: #887977;
-}
-
-.litter-puppy-info dd {
-    margin: 0;
-    color: #493b3b;
-    font-weight: 500;
-    text-align: right;
-}
-
-.litter-puppy-status {
-    margin-top: 35px;
-    padding: 25px 30px;
-    background-color: #f3e7e5;
-    border-left: 3px solid #c9aaa4;
-}
-
-.litter-puppy-status span {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #806f6b;
-}
-
-.litter-puppy-status strong {
-    color: #493b3b;
-    font-weight: 500;
-}
-
-
-/* ========================================
-   GALERIE VRHU
-   ======================================== */
-
-.litter-gallery {
-    padding: 120px 0;
-    background-color: #faf7f5;
-}
-
-.litter-gallery-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.litter-gallery-grid > div {
-    min-height: 330px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-        135deg,
-        #f2e5e2,
-        #e8d6d2
-    );
-    color: #806f6b;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-/* ========================================
-   ZÁVĚREČNÁ SEKCE
-   ======================================== */
-
-.litter-closing {
-    padding: 130px 0;
-    background-color: #fffdfc;
-    text-align: center;
-}
-
-.litter-closing-inner {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.litter-closing .section-label {
-    margin-bottom: 25px;
-}
-
-.litter-closing h2 {
-    margin: 0 0 30px;
-    font-family: Georgia, serif;
-    font-size: clamp(42px, 5vw, 62px);
-    font-weight: normal;
-    line-height: 1.2;
-    color: #493b3b;
-}
-
-.litter-closing p {
-    max-width: 680px;
-    margin: 0 auto 35px;
-    color: #655858;
-    line-height: 1.9;
-}
-
-
-/* ========================================
-   TLAČÍTKA
-   ======================================== */
-
-.litter-contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
-@media (max-width: 900px) {
-
-    .parents-grid {
-        grid-template-columns: 1fr;
-        max-width: 650px;
-    }
-
-    .litter-puppy-detail {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .litter-puppy-main-photo {
-        min-height: 500px;
-    }
-
-    .litter-gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .litter-detail-intro {
-        padding: 80px 0;
-    }
-
-    .litter-parents,
-    .litter-puppies,
-    .litter-gallery,
-    .litter-closing {
-        padding: 80px 0;
-    }
-
-    .parent-photo {
-        min-height: 380px;
-    }
-
-    .parent-content {
-        padding: 30px 25px;
-    }
-
-    .parent-name {
-        font-size: 36px;
-    }
-
-    .litter-puppy-main-photo {
-        min-height: 420px;
-    }
-
-    .litter-puppy-thumbs {
-        gap: 10px;
-    }
-
-    .litter-puppy-thumbs > div {
-        min-height: 90px;
-    }
-
-    .litter-gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .litter-gallery-grid > div {
-        min-height: 300px;
-    }
-
-    .litter-puppy-info dl div,
-    .parent-details div {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .litter-puppy-info dd,
-    .parent-details strong {
-        text-align: left;
-    }
-
-}
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vrh C · 2027 | Tiny Majesty</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HLAVIČKA
+         ======================================== -->
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                Tiny Majesty
+            </a>
+
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    Úvod
+                </a>
+
+                <a href="o-nas.html">
+                    O nás
+                </a>
+
+                <a href="psi.html">
+                    Psi
+                </a>
+
+                <a href="feny.html">
+                    Feny
+                </a>
+
+                <a href="stenata.html" class="active">
+                    Štěňátka
+                </a>
+
+                <a href="odchovy.html">
+                    Naše odchovy
+                </a>
+
+                <a href="kontakt.html">
+                    Kontakt
+                </a>
+
+            </nav>
+
+
+            <div class="language-switch">
+
+                <span class="active">
+                    CZ
+                </span>
+
+                <span>
+                    EN
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         HERO
+         ======================================== -->
+
+    <main>
+
+
+        <section class="about-hero litter-detail-hero">
+
+            <div class="about-hero-image">
+
+                <span>
+                    FOTOGRAFIE VRHU C
+                </span>
+
+            </div>
+
+
+            <div class="container about-hero-content">
+
+                <p class="section-label">
+                    TINY MAJESTY
+                </p>
+
+                <h1>
+                    Vrh C · 2027
+                </h1>
+
+                <p>
+                    Minnie × Goofy
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ZÁKLADNÍ INFORMACE
+             ======================================== -->
+
+        <section class="litter-detail-intro">
+
+            <div class="container">
+
+                <p class="section-label">
+                    VRH C
+                </p>
+
+                <h2>
+                    Plánujeme na rok 2027
+                </h2>
+
+                <p>
+                    Vrh C je jedním z plánovaných spojení Tiny Majesty.
+                    Tentokrát bychom rádi spojili naši Minnie s naším
+                    domácím chovným psem Goofym.
+                </p>
+
+                <p>
+                    O případném narození štěňátek a jejich konkrétních
+                    vlastnostech budeme informovat později.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             RODIČE VRHU
+             ======================================== -->
+
+        <section class="litter-parents">
+
+            <div class="container">
+
+                <div class="litter-section-heading">
+
+                    <p class="section-label">
+                        RODIČE VRHU C
+                    </p>
+
+                    <h2>
+                        Maminka a tatínek
+                    </h2>
+
+                </div>
+
+
+                <div class="parents-grid">
+
+
+                    <!-- ==================================
+                         MINNIE
+                         ================================== -->
+
+                    <article class="parent-card">
+
+
+                        <div class="parent-photo">
+
+                            <span>
+                                FOTOGRAFIE MINNIE
+                            </span>
+
+                        </div>
+
+
+                        <div class="parent-content">
+
+                            <p class="section-label">
+                                MATKA
+                            </p>
+
+                            <h3 class="parent-name">
+                                Minnie
+                            </h3>
+
+
+                            <p>
+                                <strong>
+                                    Nevler Line Oliffa
+                                </strong>
+                            </p>
+
+
+                            <div class="parent-details">
+
+                                <div>
+
+                                    <span>
+                                        Datum narození
+                                    </span>
+
+                                    <strong>
+                                        8. 8. 2023
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Výška
+                                    </span>
+
+                                    <strong>
+                                        20,5 cm
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Výstavní titul
+                                    </span>
+
+                                    <strong>
+                                        Czech Junior Champion
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Srdce
+                                    </span>
+
+                                    <strong>
+                                        ECHO · EKG
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="feny.html" class="parent-link">
+                                Profil našich fen →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ==================================
+                         GOOFY
+                         ================================== -->
+
+                    <article class="parent-card">
+
+
+                        <div class="parent-photo">
+
+                            <span>
+                                FOTOGRAFIE GOOFYHO
+                            </span>
+
+                        </div>
+
+
+                        <div class="parent-content">
+
+                            <p class="section-label">
+                                OTEC · DOMÁCÍ KRYTÍ
+                            </p>
+
+                            <h3 class="parent-name">
+                                Goofy
+                            </h3>
+
+
+                            <p>
+                                Náš domácí chovný pes a první pomeranian,
+                                který stál u zrodu Tiny Majesty.
+                            </p>
+
+
+                            <div class="parent-details">
+
+                                <div>
+
+                                    <span>
+                                        Datum narození
+                                    </span>
+
+                                    <strong>
+                                        15. 6. 2021
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Výška
+                                    </span>
+
+                                    <strong>
+                                        24 cm
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Patella
+                                    </span>
+
+                                    <strong>
+                                        0/0
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        DNA
+                                    </span>
+
+                                    <strong>
+                                        Testováno
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Srdce
+                                    </span>
+
+                                    <strong>
+                                        ECHO + EKG
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <a href="psi.html" class="parent-link">
+                                Profil našich psů →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ŠTĚŇÁTKA
+             ======================================== -->
+
+        <section class="litter-puppies">
+
+            <div class="container">
+
+
+                <div class="litter-section-heading">
+
+                    <p class="section-label">
+                        PLÁNOVANÁ ŠTĚŇÁTKA
+                    </p>
+
+                    <h2>
+                        Kdo by mohl přijít na svět?
+                    </h2>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     COCO
+                     ================================== -->
+
+                <article class="litter-puppy-detail">
+
+
+                    <div class="litter-puppy-gallery">
+
+                        <div class="litter-puppy-main-photo">
+
+                            <span>
+                                FOTOGRAFIE ŠTĚŇÁTKA
+                            </span>
+
+                        </div>
+
+
+                        <div class="litter-puppy-thumbs">
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="litter-puppy-info">
+
+                        <p class="section-label">
+                            FENKA
+                        </p>
+
+                        <h3>
+                            Coco
+                        </h3>
+
+                        <p>
+                            Jedna z plánovaných holčiček Vrhu C.
+                            Konkrétní vzhled, barva a povaha budou
+                            známé až po narození.
+                        </p>
+
+
+                        <dl>
+
+                            <div>
+
+                                <dt>
+                                    Matka
+                                </dt>
+
+                                <dd>
+                                    Minnie
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Otec
+                                </dt>
+
+                                <dd>
+                                    Goofy
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Datum narození
+                                </dt>
+
+                                <dd>
+                                    Plánováno 2027
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Barva
+                                </dt>
+
+                                <dd>
+                                    Bude upřesněno
+                                </dd>
+
+                            </div>
+
+                        </dl>
+
+
+                        <div class="litter-puppy-status">
+
+                            <span>
+                                STAV
+                            </span>
+
+                            <strong>
+                                Plánované štěňátko
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ==================================
+                     COSMO
+                     ================================== -->
+
+                <article class="litter-puppy-detail"
+                         style="margin-top: 100px;">
+
+
+                    <div class="litter-puppy-gallery">
+
+                        <div class="litter-puppy-main-photo">
+
+                            <span>
+                                FOTOGRAFIE ŠTĚŇÁTKA
+                            </span>
+
+                        </div>
+
+
+                        <div class="litter-puppy-thumbs">
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                            <div>
+                                <span>
+                                    Fotografie
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="litter-puppy-info">
+
+                        <p class="section-label">
+                            PEJSEK
+                        </p>
+
+                        <h3>
+                            Cosmo
+                        </h3>
+
+                        <p>
+                            Jeden z plánovaných chlapečků Vrhu C.
+                            Stejně jako u každého vrhu bude pro nás
+                            nejdůležitější jeho zdraví, povaha a vhodné
+                            umístění do rodiny.
+                        </p>
+
+
+                        <dl>
+
+                            <div>
+
+                                <dt>
+                                    Matka
+                                </dt>
+
+                                <dd>
+                                    Minnie
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Otec
+                                </dt>
+
+                                <dd>
+                                    Goofy
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Datum narození
+                                </dt>
+
+                                <dd>
+                                    Plánováno 2027
+                                </dd>
+
+                            </div>
+
+
+                            <div>
+
+                                <dt>
+                                    Barva
+                                </dt>
+
+                                <dd>
+                                    Bude upřesněno
+                                </dd>
+
+                            </div>
+
+                        </dl>
+
+
+                        <div class="litter-puppy-status">
+
+                            <span>
+                                STAV
+                            </span>
+
+                            <strong>
+                                Plánované štěňátko
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             GALERIE VRHU
+             ======================================== -->
+
+        <section class="litter-gallery">
+
+            <div class="container">
+
+                <div class="litter-section-heading">
+
+                    <p class="section-label">
+                        GALERIE
+                    </p>
+
+                    <h2>
+                        Příběh Vrhu C
+                    </h2>
+
+                </div>
+
+
+                <div class="litter-gallery-grid">
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                    <div>
+                        <span>
+                            Fotografie
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ZÁVĚR
+             ======================================== -->
+
+        <section class="litter-closing">
+
+            <div class="container">
+
+                <div class="litter-closing-inner">
+
+                    <p class="section-label">
+                        TINY MAJESTY
+                    </p>
+
+                    <h2>
+                        Každý vrh začíná příběhem.
+                    </h2>
+
+                    <p>
+                        Vrh C je zatím pouze plánem. Pokud se rozhodneme
+                        toto spojení uskutečnit, budeme vše pečlivě
+                        plánovat s ohledem na zdraví, povahu a kvalitu
+                        obou rodičů.
+                    </p>
+
+                    <p>
+                        Pokud vás plánovaný vrh zajímá, můžete nás
+                        kdykoliv kontaktovat a informovat se o možnostech
+                        zařazení na čekací listinu.
+                    </p>
+
+
+                    <div class="litter-contact-buttons">
+
+                        <a href="kontakt.html" class="btn">
+                            Kontaktovat nás
+                        </a>
+
+                        <a href="cekaci-listina.html" class="btn btn-outline">
+                            Čekací listina →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         PATIČKA
+         ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © Tiny Majesty · FCI Pomeranian Kennel
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
