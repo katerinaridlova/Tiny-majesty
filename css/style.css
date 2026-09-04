@@ -4920,3 +4920,258 @@ img {
     }
 
 }
+/* =========================================================
+   NAŠE ODCHOVY
+   ========================================================= */
+
+
+.offspring-hero {
+    min-height: 620px;
+}
+
+
+/* ---------------------------------------------------------
+   ÚVOD
+   --------------------------------------------------------- */
+
+.offspring-intro {
+    padding: 120px 0;
+    background-color: #fffdfc;
+}
+
+.offspring-intro h2 {
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.offspring-intro p:not(.section-label) {
+    max-width: 760px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   PROFILY ODCHOVŮ
+   --------------------------------------------------------- */
+
+.offspring-profile {
+    padding: 120px 0;
+    background-color: #faf7f5;
+}
+
+.offspring-profile-alt {
+    background-color: #fffdfc;
+}
+
+
+.offspring-heading {
+    max-width: 1100px;
+    margin: 0 auto 55px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.offspring-heading h2 {
+    margin: 10px 0 0;
+
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 72px);
+    font-weight: normal;
+    line-height: 1.1;
+    color: #493b3b;
+}
+
+.offspring-status {
+    margin: 0 0 8px;
+
+    color: #655858;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------------------------------------------------------
+   ROZLOŽENÍ
+   --------------------------------------------------------- */
+
+.offspring-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------
+   GALERIE
+   --------------------------------------------------------- */
+
+.offspring-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.offspring-photo {
+    min-height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #eadbd8,
+        #f7efec
+    );
+
+    color: #8c7773;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.offspring-photo-large {
+    grid-column: 1 / -1;
+    min-height: 500px;
+}
+
+
+/* ---------------------------------------------------------
+   TEXT
+   --------------------------------------------------------- */
+
+.offspring-content {
+    max-width: 500px;
+}
+
+.offspring-content h3 {
+    margin: 15px 0 30px;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.offspring-content p:not(.section-label) {
+    margin-bottom: 20px;
+
+    color: #655858;
+    line-height: 1.8;
+}
+
+.offspring-content .text-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.offspring-placeholder-text {
+    padding: 20px 25px;
+
+    background-color: #f3e7e5;
+    border-left: 2px solid #dfceca;
+
+    font-size: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   ZÁVĚR
+   --------------------------------------------------------- */
+
+.offspring-closing {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #f3e7e5;
+}
+
+.offspring-closing h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.offspring-closing p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* ---------------------------------------------------------
+   MOBIL
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .offspring-intro,
+    .offspring-profile,
+    .offspring-closing {
+        padding: 90px 0;
+    }
+
+    .offspring-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .offspring-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .offspring-content {
+        max-width: none;
+    }
+
+    .offspring-photo-large {
+        min-height: 400px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .offspring-intro,
+    .offspring-profile,
+    .offspring-closing {
+        padding: 70px 0;
+    }
+
+    .offspring-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .offspring-photo-large {
+        grid-column: auto;
+        min-height: 350px;
+    }
+
+    .offspring-photo {
+        min-height: 220px;
+    }
+
+    .offspring-content h3 {
+        font-size: 36px;
+    }
+
+}
