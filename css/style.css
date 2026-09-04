@@ -4941,7 +4941,13 @@ img {
 
 .offspring-intro h2 {
     max-width: 800px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
 }
 
 .offspring-intro p:not(.section-label) {
