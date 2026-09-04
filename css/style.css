@@ -5427,3 +5427,278 @@ img {
         justify-content: center;
     }
 }
+/* ========================================
+   REZERVACE ŠTĚŇÁTKA
+   ======================================== */
+
+.reservation-hero {
+    min-height: 620px;
+}
+
+.reservation-main {
+    background-color: #fffdfc;
+}
+
+.reservation-intro {
+    padding: 120px 0 100px;
+    text-align: center;
+}
+
+.reservation-intro h2 {
+    max-width: 850px;
+    margin: 15px auto 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.reservation-intro p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.reservation-intro .highlight {
+    max-width: 760px;
+    margin: 35px auto 0;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.7;
+    color: #493b3b;
+}
+
+
+/* ========================================
+   JEDNOTLIVÉ KROKY
+   ======================================== */
+
+.reservation-steps {
+    padding: 110px 0;
+    background-color: #faf7f5;
+}
+
+.reservation-step {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 65px 0;
+    border-top: 1px solid #dfceca;
+}
+
+.reservation-step:last-child {
+    border-bottom: 1px solid #dfceca;
+}
+
+.reservation-step-number {
+    margin-bottom: 18px;
+    color: #9b7772;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.reservation-step h2 {
+    max-width: 700px;
+    margin: 0 0 25px;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.reservation-step p {
+    max-width: 720px;
+    margin-bottom: 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.reservation-step strong {
+    color: #493b3b;
+    font-weight: normal;
+}
+
+
+/* ========================================
+   ZDŮRAZNĚNÁ ČÁST – REZERVAČNÍ POPLATEK
+   ======================================== */
+
+.reservation-fee {
+    margin-top: 35px;
+    padding: 30px 35px;
+    border-left: 2px solid #c9aaa4;
+    background-color: #fffdfc;
+}
+
+.reservation-fee p {
+    margin-bottom: 12px;
+}
+
+.reservation-fee p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   VĚK ODCHODU
+   ======================================== */
+
+.reservation-age {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+    text-align: center;
+}
+
+.reservation-age h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.reservation-age p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.reservation-age .age-highlight {
+    max-width: 700px;
+    margin: 35px auto 0;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    line-height: 1.6;
+    color: #493b3b;
+}
+
+
+/* ========================================
+   ZÁVĚR
+   ======================================== */
+
+.reservation-closing {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #fffdfc;
+}
+
+.reservation-closing h2 {
+    max-width: 850px;
+    margin: 15px auto 30px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.reservation-closing p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+.reservation-closing blockquote {
+    max-width: 850px;
+    margin: 55px auto 0;
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-style: normal;
+    line-height: 1.4;
+    color: #493b3b;
+}
+
+
+/* ========================================
+   ODKAZY NA DALŠÍ INFORMACE
+   ======================================== */
+
+.reservation-links {
+    padding: 80px 0;
+    background-color: #faf7f5;
+}
+
+.reservation-links-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.reservation-link {
+    display: block;
+    padding: 35px 30px;
+    border: 1px solid #dfceca;
+    background-color: #fffdfc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.reservation-link:hover {
+    background-color: #f3e7e5;
+    border-color: #c9aaa4;
+}
+
+.reservation-link span {
+    display: block;
+    margin-bottom: 12px;
+    color: #9b7772;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+}
+
+.reservation-link strong {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .reservation-intro,
+    .reservation-steps,
+    .reservation-age,
+    .reservation-closing {
+        padding: 90px 0;
+    }
+
+    .reservation-step {
+        padding: 50px 0;
+    }
+
+    .reservation-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .reservation-intro,
+    .reservation-steps,
+    .reservation-age,
+    .reservation-closing {
+        padding: 70px 0;
+    }
+
+    .reservation-fee {
+        padding: 25px;
+    }
+
+    .reservation-links {
+        padding: 60px 0;
+    }
+}
