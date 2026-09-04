@@ -2933,3 +2933,310 @@ img {
     }
 
 }
+/* =========================================================
+   LITTERS / VRHY
+   ========================================================= */
+
+
+.litters-intro {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #faf7f5;
+}
+
+.litters-intro h2 {
+    margin-bottom: 35px;
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #493b3b;
+}
+
+.litters-intro p:not(.section-label) {
+    max-width: 760px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+
+/* ---------------------------------------------------------
+   LITTER SECTION
+   --------------------------------------------------------- */
+
+.litters-section {
+    padding: 120px 0;
+    background-color: #f3e7e5;
+}
+
+.litters-section-alt {
+    background-color: #faf7f5;
+}
+
+
+.litter-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.litter-heading h2 {
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: normal;
+    line-height: 1.15;
+    color: #493b3b;
+}
+
+.litter-heading > p:last-child {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #655858;
+}
+
+
+
+/* ---------------------------------------------------------
+   PUPPY CARDS
+   --------------------------------------------------------- */
+
+.puppies-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.puppy-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    background-color: #faf7f5;
+    border: 1px solid #e7d9d5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.puppy-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(73, 59, 59, 0.08);
+}
+
+
+.puppy-card-photo {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        #ead7d2,
+        #f4e8e4
+    );
+    color: #8b7772;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+.puppy-card-content {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.puppy-card-content h3 {
+    margin: 5px 0 30px;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+
+.puppy-card-content dl {
+    margin: 0;
+}
+
+
+.puppy-card-content dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eadeda;
+}
+
+
+.puppy-card-content dt {
+    color: #8a7975;
+    font-size: 14px;
+}
+
+
+.puppy-card-content dd {
+    margin: 0;
+    color: #493b3b;
+    text-align: right;
+}
+
+
+.puppy-status {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 25px;
+    padding: 9px 15px;
+    border: 1px solid #d8c2bc;
+    color: #725d58;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* ---------------------------------------------------------
+   LITTER LINK
+   --------------------------------------------------------- */
+
+.litter-link {
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------
+   PREVIOUS LITTER
+   --------------------------------------------------------- */
+
+.past-litter-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #f3e7e5;
+    border: 1px solid #e4d4d0;
+}
+
+
+.past-litter-card h3 {
+    margin: 5px 0 15px;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #493b3b;
+}
+
+
+.past-litter-card p:not(.section-label) {
+    max-width: 600px;
+    margin: 0;
+    color: #655858;
+    line-height: 1.7;
+}
+
+
+.text-link {
+    flex-shrink: 0;
+    color: #493b3b;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .litters-intro {
+        padding: 90px 0;
+    }
+
+
+    .litters-section {
+        padding: 90px 0;
+    }
+
+
+    .puppy-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .puppy-card-photo {
+        min-height: 300px;
+    }
+
+
+    .puppy-card-content {
+        padding: 35px;
+    }
+
+
+    .past-litter-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .litter-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .puppy-card-photo {
+        min-height: 240px;
+    }
+
+
+    .puppy-card-content {
+        padding: 28px;
+    }
+
+
+    .puppy-card-content h3 {
+        font-size: 34px;
+    }
+
+
+    .puppy-card-content dl > div {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+
+    .puppy-card-content dd {
+        text-align: left;
+    }
+
+
+    .past-litter-card {
+        padding: 30px;
+    }
+
+}
