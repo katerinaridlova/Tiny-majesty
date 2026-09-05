@@ -6241,3 +6241,237 @@ img {
         font-size: 32px;
     }
 }
+/* =========================================================
+   PUPPY HOME / CO SI ŠTĚŇÁTKO ODNESE DOMŮ
+   ========================================================= */
+
+.puppy-home-hero {
+    min-height: 620px;
+}
+
+
+/* INTRO */
+
+.puppy-home-intro {
+    padding: 120px 0 105px;
+    background: #fffdfc;
+    text-align: center;
+}
+
+.puppy-home-intro .container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.puppy-home-intro h2 {
+    max-width: 850px;
+    margin: 15px auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.12;
+    font-weight: 400;
+    color: #493b3b;
+}
+
+.puppy-home-intro p:not(.section-label) {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.8;
+}
+
+
+/* TEXT SECTIONS */
+
+.puppy-home-routine,
+.puppy-home-safety,
+.puppy-home-place {
+    padding: 110px 0;
+}
+
+.puppy-home-routine {
+    background: #faf7f5;
+}
+
+.puppy-home-safety {
+    background: #fffdfc;
+}
+
+.puppy-home-place {
+    background: #f5ebe8;
+}
+
+.puppy-home-section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.puppy-home-section-heading h2 {
+    max-width: 850px;
+    margin: 15px auto 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4.8vw, 60px);
+    line-height: 1.15;
+    font-weight: 400;
+    color: #493b3b;
+}
+
+.puppy-home-text {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.puppy-home-text p {
+    margin: 0 0 22px;
+    color: #655858;
+    line-height: 1.85;
+}
+
+.puppy-home-text p:last-child {
+    margin-bottom: 0;
+}
+
+.puppy-home-text strong {
+    color: #493b3b;
+    font-weight: 600;
+}
+
+
+/* WHAT THE PUPPY TAKES HOME */
+
+.puppy-home-kit {
+    padding: 115px 0;
+    background: #fffdfc;
+}
+
+.puppy-home-kit .puppy-home-section-heading {
+    margin-bottom: 65px;
+}
+
+.puppy-home-items {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: #e8dcda;
+}
+
+.puppy-home-item {
+    padding: 42px 45px;
+    background: #fffdfc;
+}
+
+.puppy-home-item span {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    color: #a88987;
+}
+
+.puppy-home-item h3 {
+    margin: 0 0 13px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 400;
+    color: #493b3b;
+}
+
+.puppy-home-item p {
+    margin: 0;
+    color: #655858;
+    line-height: 1.75;
+}
+
+
+/* SUPPORT */
+
+.puppy-home-support {
+    padding: 125px 20px;
+    background: linear-gradient(
+        135deg,
+        #f5e6e3 0%,
+        #fbf2ef 50%,
+        #f2e3df 100%
+    );
+    text-align: center;
+}
+
+.puppy-home-support .container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.puppy-home-support h2 {
+    margin: 15px auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 5vw, 64px);
+    line-height: 1.12;
+    font-weight: 400;
+    color: #493b3b;
+}
+
+.puppy-home-support p:not(.section-label) {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #655858;
+    line-height: 1.85;
+}
+
+.puppy-home-support-final {
+    margin-top: 35px !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    color: #493b3b !important;
+}
+
+.puppy-home-support .btn-primary {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .puppy-home-intro,
+    .puppy-home-routine,
+    .puppy-home-safety,
+    .puppy-home-place,
+    .puppy-home-kit {
+        padding: 80px 20px;
+    }
+
+    .puppy-home-items {
+        grid-template-columns: 1fr;
+    }
+
+    .puppy-home-item {
+        padding: 35px 30px;
+    }
+
+    .puppy-home-support {
+        padding: 90px 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .puppy-home-intro h2,
+    .puppy-home-section-heading h2 {
+        font-size: 38px;
+    }
+
+    .puppy-home-item h3 {
+        font-size: 25px;
+    }
+
+    .puppy-home-support-final {
+        font-size: 21px;
+    }
+
+}
