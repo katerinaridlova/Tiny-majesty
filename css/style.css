@@ -6687,3 +6687,22 @@ img {
     }
 
 }
+/* LOGO V HLAVIČCE */
+
+.header-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-name,
+.logo-subtitle {
+    display: block;
+}
