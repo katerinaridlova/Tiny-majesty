@@ -6707,33 +6707,33 @@ img {
     display: block;
 }
 /* =========================================================
-   HEADER LOGO
+   HEADER LOGO – UPRAVENÁ VERZE
    ========================================================= */
 
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 18px;
+.site-header .logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 18px !important;
 }
 
-.header-logo {
-    width: 85px;
-    height: 85px;
-    object-fit: contain;
-    flex-shrink: 0;
+.site-header .header-logo {
+    width: 105px !important;
+    height: 105px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.site-header .logo-text {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
 }
 
-.logo-name {
-    display: block;
+.site-header .logo-name {
+    display: block !important;
 }
 
-.logo-subtitle {
-    display: block;
+.site-header .logo-subtitle {
+    display: block !important;
 }
