@@ -6706,3 +6706,34 @@ img {
 .logo-subtitle {
     display: block;
 }
+/* =========================================================
+   HEADER LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-name {
+    display: block;
+}
+
+.logo-subtitle {
+    display: block;
+}
