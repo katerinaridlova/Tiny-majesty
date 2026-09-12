@@ -6737,3 +6737,39 @@ img {
 .site-header .logo-subtitle {
     display: block !important;
 }
+/* NOVINKY – GALERIE V ČLÁNKU */
+
+.news-article-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.news-gallery-image {
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #e9d5d2 0%,
+        #f3e5e2 50%,
+        #dfc7c4 100%
+    );
+
+    color: #ffffff;
+
+    font-size: 11px;
+    letter-spacing: 0.2em;
+}
+
+@media (max-width: 600px) {
+
+    .news-article-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
