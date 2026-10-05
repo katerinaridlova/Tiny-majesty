@@ -15,7 +15,32 @@
 
 </head>
 
+<!-- ==================================
+     GALERIE – LIGHTBOX
+     ================================== -->
 
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Zavřít">
+        ×
+    </button>
+
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Předchozí fotografie">
+        ‹
+    </button>
+
+    <div class="lightbox-content">
+
+        <img id="lightboxImage" src="" alt="">
+
+    </div>
+
+    <button class="lightbox-next" id="lightboxNext" aria-label="Další fotografie">
+        ›
+    </button>
+
+</div>
+    
 <body>
 
 
@@ -232,7 +257,11 @@
    <div class="female-gallery">
 
     <div class="female-main-photo">
-        <img src="images/females/minnie.jpg" alt="Minnie – Tiny Majesty">
+        <img src="images/females/minnie.jpg"
+         alt="Minnie – Tiny Majesty"
+         class="gallery-lightbox-image"
+         data-gallery="minnie"
+         data-index="0">
     </div>
 
     <div class="female-gallery-thumbs">
