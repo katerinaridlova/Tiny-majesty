@@ -699,7 +699,114 @@
 
 </div>
     
-<script src="js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxPrev = document.getElementById("lightboxPrev");
+    const lightboxNext = document.getElementById("lightboxNext");
+
+    const galleryImages = Array.from(
+        document.querySelectorAll(".gallery-lightbox-image")
+    );
+
+    let currentImageIndex = 0;
+
+
+    function openLightbox(index) {
+
+        if (!galleryImages.length) return;
+
+        currentImageIndex = index;
+
+        lightboxImage.src = galleryImages[currentImageIndex].src;
+        lightboxImage.alt = galleryImages[currentImageIndex].alt;
+
+        lightbox.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
+
+
+    galleryImages.forEach(function (image, index) {
+
+        image.style.cursor = "pointer";
+
+        image.addEventListener("click", function () {
+            openLightbox(index);
+        });
+
+    });
+
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+
+    lightboxPrev.addEventListener("click", function () {
+
+        currentImageIndex--;
+
+        if (currentImageIndex < 0) {
+            currentImageIndex = galleryImages.length - 1;
+        }
+
+        openLightbox(currentImageIndex);
+
+    });
+
+
+    lightboxNext.addEventListener("click", function () {
+
+        currentImageIndex++;
+
+        if (currentImageIndex >= galleryImages.length) {
+            currentImageIndex = 0;
+        }
+
+        openLightbox(currentImageIndex);
+
+    });
+
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+
+    });
+
+
+    document.addEventListener("keydown", function (event) {
+
+        if (!lightbox.classList.contains("active")) return;
+
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+
+        if (event.key === "ArrowLeft") {
+            lightboxPrev.click();
+        }
+
+        if (event.key === "ArrowRight") {
+            lightboxNext.click();
+        }
+
+    });
+
+});
+</script>
     
 </body>
 
