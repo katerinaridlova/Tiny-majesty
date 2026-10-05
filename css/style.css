@@ -6838,3 +6838,155 @@ img {
     }
 
 }
+
+/* =========================================================
+   LIGHTBOX – ZVĚTŠENÍ FOTOGRAFIÍ
+   ========================================================= */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(35, 28, 28, 0.88);
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    max-width: 85vw;
+    max-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content img {
+    display: block;
+
+    max-width: 85vw;
+    max-height: 88vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ZAVŘÍT */
+
+.lightbox-close {
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 42px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+
+/* ŠIPKY */
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 70px;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 60px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.lightbox-prev {
+    left: 25px;
+}
+
+.lightbox-next {
+    right: 25px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+    opacity: 0.65;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+
+    .lightbox-content {
+        max-width: 90vw;
+        max-height: 85vh;
+    }
+
+    .lightbox-content img {
+        max-width: 90vw;
+        max-height: 82vh;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 55px;
+
+        font-size: 45px;
+    }
+
+    .lightbox-prev {
+        left: 5px;
+    }
+
+    .lightbox-next {
+        right: 5px;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+
+        font-size: 35px;
+    }
+
+}
