@@ -6992,16 +6992,16 @@ img {
 }
 
 
-/* Oficiální jméno fenky z rodokmenu */
+
+/* Oficiální jméno z rodokmenu */
 
 .female-registered-name {
-    margin-top: -12px;
-    margin-bottom: 22px;
+    margin-top: -8px;
+    margin-bottom: 38px;
     font-family: Arial, sans-serif;
     font-size: 13px;
     font-weight: 400;
-    letter-spacing: 1.5px;
-    color: #927b76;
+    letter-spacing: 0.8px;
+    color: #a99a97;
     line-height: 1.6;
 }
-
