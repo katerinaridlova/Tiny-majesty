@@ -7165,3 +7165,28 @@ body.lightbox-open {
 }
 
 
+/* ========================================
+   O NÁS – PRVNÍ FOTOGRAFIE
+   Zachování celého obrázku bez oříznutí
+   ======================================== */
+
+.about-story .female-gallery {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    overflow: visible;
+    background: transparent;
+}
+
+.about-story .female-gallery .female-main-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
