@@ -7134,3 +7134,34 @@ body.lightbox-open {
 
 }
 
+
+/* ========================================
+   FOTOGRAFIE – STRÁNKA O NÁS
+   ======================================== */
+
+.about-image-placeholder {
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+}
+
+.about-image-placeholder img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-image-placeholder.large {
+    background: transparent;
+    padding: 0;
+}
+
+.about-image-placeholder.large img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
