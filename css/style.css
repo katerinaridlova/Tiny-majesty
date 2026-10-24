@@ -6990,3 +6990,18 @@ img {
     }
 
 }
+
+
+/* Oficiální jméno fenky z rodokmenu */
+
+.female-registered-name {
+    margin-top: -12px;
+    margin-bottom: 22px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #927b76;
+    line-height: 1.6;
+}
+
