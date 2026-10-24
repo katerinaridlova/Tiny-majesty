@@ -7005,3 +7005,132 @@ img {
     color: #a99a97;
     line-height: 1.6;
 }
+
+
+/* ========================================
+   FOTOGALERIE PSŮ
+   ======================================== */
+
+.female-gallery {
+    width: 100%;
+    min-width: 0;
+}
+
+.female-main-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.female-gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.female-gallery-thumbs img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   LIGHTBOX – ZVĚTŠENÁ FOTOGRAFIE
+   ======================================== */
+
+.gallery-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(30, 20, 20, 0.92);
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px;
+}
+
+.gallery-lightbox.is-open {
+    display: flex;
+}
+
+.gallery-lightbox-full {
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.gallery-lightbox-prev,
+.gallery-lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.gallery-lightbox-prev {
+    left: 20px;
+}
+
+.gallery-lightbox-next {
+    right: 20px;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+
+/* ========================================
+   MOBIL
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .gallery-lightbox {
+        padding: 20px;
+    }
+
+    .gallery-lightbox-full {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .gallery-lightbox-prev {
+        left: 0;
+    }
+
+    .gallery-lightbox-next {
+        right: 0;
+    }
+
+}
+
