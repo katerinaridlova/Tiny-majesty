@@ -7190,3 +7190,53 @@ body.lightbox-open {
     object-position: center;
 }
 
+
+/* ========================================
+   ŠTĚŇÁTKA – FOTOGRAFIE AKTUÁLNÍCH VRHŮ
+   ======================================== */
+
+.puppies-feature-photo {
+    padding: 0;
+    height: auto;
+    min-height: 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+.puppies-feature-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* ========================================
+   ŠTĚŇÁTKA – ODKAZ NA VRHY
+   ======================================== */
+
+.puppies-feature-text .btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 14px 26px;
+
+    background: #f8f1ef;
+    border: 1px solid #dfc9c4;
+
+    color: #51413f;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+
+    transition: background 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.puppies-feature-text .btn:hover {
+    background: #efe1dd;
+    border-color: #c9aaa3;
+}
+
