@@ -7295,3 +7295,10 @@ body.lightbox-open {
     }
 
 }
+/* Odstranění růžového pozadí za fotkami v novinkách */
+.news-article-image,
+.news-gallery-image,
+.news-article-gallery,
+.news-article-gallery .news-gallery-image {
+    background: transparent !important;
+}
