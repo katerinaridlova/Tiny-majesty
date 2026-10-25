@@ -1,3 +1,4 @@
+
 /* ========================================
    TINY MAJESTY
    Main stylesheet
@@ -7241,165 +7242,56 @@ body.lightbox-open {
 }
 
 
-
 /* ========================================
-   NOVINKY – UNIVERZÁLNÍ ČLÁNKY
+   NOVINKY – FOTOGRAFIE
    ======================================== */
 
-
-/* ZÁKLAD ČLÁNKU */
-
-.news-list .news-article {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 30px;
-    align-items: start;
-    margin-bottom: 80px;
-}
-
-
-/* TEXT */
-
-.news-list .news-article-content {
-    min-width: 0;
-    padding: 0;
-}
-
-
-/* FOTOGRAFICKÝ BLOK */
-
-.news-list .news-article-image {
-    min-width: 0;
-    min-height: 0;
-    height: auto;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-}
-
-
-/* GALERIE */
-
-.news-list .news-article-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    width: 100%;
-    margin: 0;
-}
-
-
-/* JEDNOTLIVÉ FOTOGRAFIE */
-
-.news-list .news-gallery-image {
-    min-width: 0;
-    min-height: 0;
-    height: auto;
-    padding: 0;
-    background: transparent;
-    overflow: hidden;
-}
-
-
-/* OBRÁZKY */
-
-.news-list .news-article img {
+.news-hero-photo {
     display: block;
     width: 100%;
     height: auto;
     max-width: 100%;
     object-fit: contain;
-    object-position: center;
+}
+
+.news-article-image {
+    overflow: hidden;
+}
+
+.news-article-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.news-article-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.news-gallery-image {
+    overflow: hidden;
+}
+
+.news-gallery-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     cursor: pointer;
 }
 
-
-/* ========================================
-   1 FOTOGRAFIE
-   TEXT VLEVO – FOTO VPRAVO
-   ======================================== */
-
-.news-list .news-one-photo {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+.news-lightbox-image {
+    cursor: pointer;
 }
 
-.news-list .news-one-photo .news-article-content {
-    grid-column: 1;
-    grid-row: 1;
-}
+@media (max-width: 600px) {
 
-.news-list .news-one-photo .news-article-image {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-
-/* ========================================
-   2 FOTOGRAFIE
-   TEXT NAHOŘE – FOTKY POD TEXTEM
-   ======================================== */
-
-.news-list .news-two-photos {
-    display: block;
-}
-
-.news-list .news-two-photos .news-article-content {
-    margin-bottom: 24px;
-}
-
-.news-list .news-two-photos .news-article-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-
-/* ========================================
-   3 FOTOGRAFIE
-   FOTO VLEVO – TEXT A 2 FOTKY VPRAVO
-   ======================================== */
-
-.news-list .news-three-photos {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 30px;
-}
-
-.news-list .news-three-photos > .news-article-image {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.news-list .news-three-photos > .news-article-content {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.news-list .news-three-photos .news-article-gallery {
-    margin-top: 24px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-
-/* ========================================
-   MOBIL
-   ======================================== */
-
-@media (max-width: 700px) {
-
-    .news-list .news-article,
-    .news-list .news-three-photos {
-        display: block;
-    }
-
-    .news-list .news-one-photo .news-article-image {
-        margin-top: 24px;
-    }
-
-    .news-list .news-three-photos > .news-article-image {
-        margin-bottom: 24px;
-    }
-
-    .news-list .news-two-photos .news-article-gallery,
-    .news-list .news-three-photos .news-article-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .news-article-gallery {
+        grid-template-columns: 1fr;
     }
 
 }
