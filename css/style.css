@@ -7296,8 +7296,17 @@ body.lightbox-open {
 
 }
 
-/* Odstranění pozadí pouze kolem jednotlivých fotografií */
-.news-article-image:has(img),
-.news-gallery-image:has(img) {
-    background: transparent !important;
+/* NOVINKY – odstranit růžový gradient pouze z obalů fotek */
+
+.news-article-gallery .news-gallery-image {
+    background: none !important;
+    background-image: none !important;
+}
+
+/* Fotografie bez pozadí a bez ořezu */
+.news-article-gallery .news-gallery-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
