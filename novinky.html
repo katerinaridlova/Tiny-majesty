@@ -478,6 +478,176 @@
 
     </section>
 
+    
+<!-- ========================================
+     LIGHTBOX NOVINEK
+     ======================================== -->
+
+<div class="gallery-lightbox"
+     id="newsLightbox"
+     aria-hidden="true">
+
+    <button class="gallery-lightbox-close"
+            type="button"
+            aria-label="Zavřít">
+        &times;
+    </button>
+
+    <button class="gallery-lightbox-prev"
+            type="button"
+            aria-label="Předchozí fotografie">
+        &#10094;
+    </button>
+
+    <img class="gallery-lightbox-full"
+         src=""
+         alt="">
+
+    <button class="gallery-lightbox-next"
+            type="button"
+            aria-label="Další fotografie">
+        &#10095;
+    </button>
+
+</div>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lightbox = document.getElementById("newsLightbox");
+
+    const lightboxImage = lightbox.querySelector(".gallery-lightbox-full");
+
+    const closeButton = lightbox.querySelector(".gallery-lightbox-close");
+
+    const prevButton = lightbox.querySelector(".gallery-lightbox-prev");
+
+    const nextButton = lightbox.querySelector(".gallery-lightbox-next");
+
+    let activeGallery = [];
+
+    let activeIndex = 0;
+
+
+    function showImage(index) {
+
+        if (!activeGallery.length) return;
+
+        activeIndex = (index + activeGallery.length) % activeGallery.length;
+
+        const selected = activeGallery[activeIndex];
+
+        lightboxImage.src = selected.src;
+
+        lightboxImage.alt = selected.alt || "";
+
+    }
+
+
+    function openLightbox(image) {
+
+        const galleryName = image.dataset.gallery;
+
+        activeGallery = Array.from(
+            document.querySelectorAll(
+                '.news-lightbox-image[data-gallery="' + galleryName + '"]'
+            )
+        );
+
+        activeIndex = activeGallery.indexOf(image);
+
+        showImage(activeIndex);
+
+        lightbox.classList.add("is-open");
+
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("lightbox-open");
+
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("is-open");
+
+        lightbox.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("lightbox-open");
+
+    }
+
+
+    document.querySelectorAll(".news-lightbox-image").forEach(function (image) {
+
+        image.addEventListener("click", function () {
+
+            openLightbox(image);
+
+        });
+
+    });
+
+
+    prevButton.addEventListener("click", function () {
+
+        showImage(activeIndex - 1);
+
+    });
+
+
+    nextButton.addEventListener("click", function () {
+
+        showImage(activeIndex + 1);
+
+    });
+
+
+    closeButton.addEventListener("click", closeLightbox);
+
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", function (event) {
+
+        if (!lightbox.classList.contains("is-open")) return;
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+        if (event.key === "ArrowLeft") {
+
+            showImage(activeIndex - 1);
+
+        }
+
+        if (event.key === "ArrowRight") {
+
+            showImage(activeIndex + 1);
+
+        }
+
+    });
+
+});
+
+</script>
+
+
 
 
     <!-- CLOSING -->
