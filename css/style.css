@@ -7240,3 +7240,57 @@ body.lightbox-open {
     border-color: #c9aaa3;
 }
 
+
+/* ========================================
+   NOVINKY – FOTOGRAFIE
+   ======================================== */
+
+.news-hero-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.news-article-image {
+    overflow: hidden;
+}
+
+.news-article-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.news-article-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.news-gallery-image {
+    overflow: hidden;
+}
+
+.news-gallery-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.news-lightbox-image {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .news-article-gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
