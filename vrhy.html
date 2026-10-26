@@ -332,7 +332,92 @@
 </footer>
 
 
+
+</footer>
+
+<!-- LIGHTBOX -->
+
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+
+    <button class="gallery-lightbox-close"
+            type="button"
+            aria-label="Zavřít">
+        &times;
+    </button>
+
+    <button class="gallery-lightbox-prev"
+            type="button"
+            aria-label="Předchozí fotografie">
+        &#10094;
+    </button>
+
+    <img class="gallery-lightbox-full" src="" alt="">
+
+    <button class="gallery-lightbox-next"
+            type="button"
+            aria-label="Další fotografie">
+        &#10095;
+    </button>
+
+</div>
+
 <script src="js/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const image = document.querySelector(
+        '.puppy-card-photo .gallery-lightbox-image'
+    );
+
+    const lightbox = document.getElementById("galleryLightbox");
+
+    if (!image || !lightbox) return;
+
+    const fullImage = lightbox.querySelector(".gallery-lightbox-full");
+    const closeButton = lightbox.querySelector(".gallery-lightbox-close");
+
+    image.addEventListener("click", function () {
+
+        fullImage.src = image.src;
+        fullImage.alt = image.alt;
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("lightbox-open");
+
+    });
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+
+        document.body.classList.remove("lightbox-open");
+
+    }
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (event) {
+
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+
+    });
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+
+    });
+
+});
+</script>
 
 </body>
 
