@@ -7315,3 +7315,7 @@ body.lightbox-open {
     cursor: pointer;
 }
 
+/* Rozkliknutí fotografie Bellatrix */
+.puppy-card-photo .gallery-lightbox-image {
+    cursor: pointer;
+}
