@@ -7300,18 +7300,4 @@ body.lightbox-open {
     background: transparent !important;
 }
 
-/* ODCHOVY – FOTOGRAFIE */
-
-.offspring-gallery .offspring-photo {
-    background: transparent;
-    overflow: hidden;
-}
-
-.offspring-gallery .offspring-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    cursor: pointer;
-}
 
