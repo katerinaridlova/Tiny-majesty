@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,347 +10,262 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-</head>
+    <style>
+        .litter-parents .parent-photo {
+            height: 420px;
+            overflow: hidden;
+        }
 
+        .litter-parents .parent-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .litter-puppy-main-photo img,
+        .litter-puppy-thumbs img,
+        .litter-gallery-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
 
 <body>
 
-
 <header class="site-header">
-
     <div class="container header-inner">
 
         <a href="index.html" class="logo">
+            <img src="images/tiny-majesty-logo-black-transparent.png"
+                 alt="Tiny Majesty"
+                 class="header-logo">
 
-    <img src="images/tiny-majesty-logo-black-transparent.png"
-         alt="Tiny Majesty"
-         class="header-logo">
-
-    <span class="logo-text">
-
-        <span class="logo-name">
-            Tiny Majesty
-        </span>
-
-        <span class="logo-subtitle">
-            Pomeranian Kennel
-        </span>
-
-    </span>
-
-</a>
-
+            <span class="logo-text">
+                <span class="logo-name">Tiny Majesty</span>
+                <span class="logo-subtitle">Pomeranian Kennel</span>
+            </span>
+        </a>
 
         <nav class="main-nav">
-
             <a href="index.html">Úvod</a>
-
             <a href="o-nas.html">O nás</a>
-
             <a href="psi.html">Psi</a>
-
             <a href="feny.html">Feny</a>
-
             <a href="stenata.html" class="active">Štěňátka</a>
-
             <a href="odchovy.html">Naše odchovy</a>
-             <a href="novinky.html">
-                Novinky
-            </a>
-
+            <a href="novinky.html">Novinky</a>
             <a href="kontakt.html">Kontakt</a>
-
         </nav>
 
-
         <div class="language-switch">
-
             <span class="active">CZ</span>
-
             <span>EN</span>
-
         </div>
 
     </div>
-
 </header>
-
-
 
 <main>
 
-
     <!-- HERO -->
-
     <section class="about-hero litter-detail-hero">
 
         <div class="about-hero-placeholder">
-
-            <span>FOTOGRAFIE VRHU B</span>
-
+            <span>
+                
+            </span>
         </div>
 
-
         <div class="container">
-
             <div class="about-hero-content">
-
-                <p class="section-label">
-                    TINY MAJESTY
-                </p>
-
-                <h1>
-                    Vrh B · 2026
-                </h1>
-
-                <p>
-                    Minnie × Toto Buin
-                </p>
-
+                <p class="section-label">TINY MAJESTY</p>
+                <h1>Vrh B · 2026</h1>
+                <p>Minnie × Toto Buin</p>
             </div>
-
         </div>
 
     </section>
 
-
-
     <!-- BASIC INFORMATION -->
-
     <section class="litter-detail-intro">
-
         <div class="container narrow">
 
-            <p class="section-label">
-                VRH B
-            </p>
-
-            <h2>
-                22. 7. 2026
-            </h2>
+            <p class="section-label">VRH B</p>
+            <h2>22. 7. 2026</h2>
 
             <p>
                 Vrh B se narodil 22. 7. 2026.
             </p>
 
         </div>
-
     </section>
 
-
-
     <!-- PARENTS -->
-
     <section class="litter-parents">
-
         <div class="container">
 
             <div class="litter-section-heading">
-
-                <p class="section-label">
-                    RODIČE VRHU B
-                </p>
-
-                <h2>
-                    Maminka a tatínek
-                </h2>
-
+                <p class="section-label">RODIČE VRHU B</p>
+                <h2>Maminka a tatínek</h2>
             </div>
-
 
             <div class="parents-grid">
 
-
                 <!-- MINNIE -->
-
                 <article class="parent-card">
 
                     <div class="parent-photo">
-
-                        <span>
-                            FOTOGRAFIE MINNIE
-                        </span>
-
+                        <img src="images/VrhB/Minnie1.png"
+                             alt="Minnie – maminka vrhu B"
+                             class="gallery-lightbox-image"
+                             data-gallery="rodice">
                     </div>
-
 
                     <div class="parent-content">
 
-                        <p class="section-label">
-                            MATKA
-                        </p>
-
-                        <h3>
-                            Minnie
-                        </h3>
+                        <p class="section-label">MATKA</p>
+                        <h3>Minnie</h3>
 
                         <p class="parent-name">
                             Nevler Line Oliffa
                         </p>
 
-
                         <dl>
-
                             <div>
                                 <dt>Výška</dt>
-                                <dd>20,5 cm</dd>
+                                <dd id="minnie-height">Načítám…</dd>
                             </div>
+                                             
 
                             <div>
-                                <dt>Narozená</dt>
-                                <dd>8. 8. 2023</dd>
+                                <dt>Zdraví</dt>
+                                <dd id="minnie-health">Načítám…</dd>
                             </div>
 
                             <div>
                                 <dt>Výstavní úspěchy</dt>
-                                <dd>Czech Junior Champion</dd>
+                                <dd id="minnie-shows">Načítám…</dd>
                             </div>
-
-                            <div>
-                                <dt>Zdraví</dt>
-                                <dd>
-                                    ECHO · EKG
-                                </dd>
-                            </div>
-
                         </dl>
-
 
                         <a href="feny.html#85qq16" class="text-link">
                             Více o Minnie →
                         </a>
 
                     </div>
-
                 </article>
 
-
-
                 <!-- TOTO BUIN -->
-
                 <article class="parent-card">
 
                     <div class="parent-photo">
-
-                        <span>
-                            FOTOGRAFIE TOTO BUINA
-                        </span>
-
+                        <img src="images/VrhB/Toto1.jpg"
+                             alt="Toto Buin – otec vrhu B"
+                             class="gallery-lightbox-image"
+                             data-gallery="rodice">
                     </div>
-
 
                     <div class="parent-content">
 
-                        <p class="section-label">
-                            OTEC · EXTERNÍ KRYTÍ
-                        </p>
-
-                        <h3>
-                            Toto Buin
-                        </h3>
-
+                        <p class="section-label">OTEC · EXTERNÍ KRYTÍ</p>
+                        <h3>Toto Buin</h3>
 
                         <dl>
+                            <div>
+                                <dt>Výška</dt>
+                                <dd>21 cm</dd>
+                            </div>
+
+                            <div>
+                                <dt>Barva</dt>
+                                <dd>Creme sable</dd>
+                            </div>
+
+                            <div>
+                                <dt>Patelly</dt>
+                                <dd>0/0</dd>
+                            </div>
+
+                            <div>
+                                <dt>DNA</dt>
+                                <dd>Vyšetřeno</dd>
+                            </div>
 
                             <div>
                                 <dt>Výstavní úspěchy</dt>
                                 <dd>
-                                    DOPLNÍME
+                                    C.I.B.; Grand champ. ČR; Český šampion;
+                                    Champion ČMKU; Klubový champion; 6× BOB;
+                                    3× CACA; Best of Day; 2× BOS;
+                                    2× Národní vítěz; Český junior šampion;
+                                    Best of Juniors; CAC Maďarska
                                 </dd>
                             </div>
-
-                            <div>
-                                <dt>Zdraví</dt>
-                                <dd>
-                                    DOPLNÍME
-                                </dd>
-                            </div>
-
                         </dl>
 
                     </div>
-
                 </article>
 
-
             </div>
-
         </div>
-
     </section>
 
-
-
     <!-- PUPPY -->
-
     <section class="litter-puppies">
-
         <div class="container">
 
             <div class="litter-section-heading">
-
-                <p class="section-label">
-                    ŠTĚŇÁTKO
-                </p>
-
-                <h2>
-                    Bellatrix
-                </h2>
-
-                <p>
-                    Jedináček vrhu B
-                </p>
-
+                <p class="section-label">ŠTĚŇÁTKO</p>
+                <h2>Bellatrix</h2>
+                <p>Jedináček vrhu B</p>
             </div>
 
-
             <article class="litter-puppy-detail">
-
 
                 <div class="litter-puppy-gallery">
 
                     <div class="litter-puppy-main-photo">
-
-                        <span>
-                            HLAVNÍ FOTOGRAFIE BELLATRIX
-                        </span>
-
+                        <img src="images/VrhB/Bella1.jpg"
+                             alt="Bellatrix – hlavní fotografie"
+                             class="gallery-lightbox-image"
+                             data-gallery="bellatrix">
                     </div>
 
-
                     <div class="litter-puppy-thumbs">
-
                         <div>
-                            <span>FOTOGRAFIE 2</span>
+                            <img src="images/VrhB/Bella2.jpg"
+                                 alt="Bellatrix – fotografie 2"
+                                 class="gallery-lightbox-image"
+                                 data-gallery="bellatrix">
                         </div>
 
                         <div>
-                            <span>FOTOGRAFIE 3</span>
+                            <img src="images/VrhB/Bella3.jpg"
+                                 alt="Bellatrix – fotografie 3"
+                                 class="gallery-lightbox-image"
+                                 data-gallery="bellatrix">
                         </div>
 
                         <div>
-                            <span>FOTOGRAFIE 4</span>
+                            <img src="images/VrhB/Bella4.JPG"
+                                 alt="Bellatrix – fotografie 4"
+                                 class="gallery-lightbox-image"
+                                 data-gallery="bellatrix">
                         </div>
-
                     </div>
 
                 </div>
 
-
-
                 <div class="litter-puppy-info">
 
-                    <p class="section-label">
-                        FENKA
-                    </p>
-
-                    <h3>
-                        Bellatrix
-                    </h3>
-
+                    <p class="section-label">FENKA</p>
+                    <h3>Bellatrix</h3>
 
                     <dl>
-
                         <div>
                             <dt>Datum narození</dt>
                             <dd>22. 7. 2026</dd>
@@ -370,9 +285,7 @@
                             <dt>Otec</dt>
                             <dd>Toto Buin</dd>
                         </div>
-
                     </dl>
-
 
                     <div class="litter-puppy-status">
                         Volná k rezervaci
@@ -380,81 +293,87 @@
 
                 </div>
 
-
             </article>
-
         </div>
-
     </section>
 
-
-
     <!-- GALLERY -->
-
     <section class="litter-gallery">
-
         <div class="container">
 
             <div class="litter-section-heading">
-
-                <p class="section-label">
-                    FOTOGALERIE
-                </p>
-
-                <h2>
-                    Vrh B
-                </h2>
-
+                <p class="section-label">FOTOGALERIE</p>
+                <h2>Vrh B</h2>
             </div>
 
-
             <div class="litter-gallery-grid">
-
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella1.jpg"
+                         alt="Bellatrix – fotografie 1"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella2.jpg"
+                         alt="Bellatrix – fotografie 2"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella3.jpg"
+                         alt="Bellatrix – fotografie 3"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella4.JPG"
+                         alt="Bellatrix – fotografie 4"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella5.jpg"
+                         alt="Bellatrix – fotografie 5"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
                 <div>
-                    <span>FOTOGRAFIE</span>
+                    <img src="images/VrhB/Bella6.JPG"
+                         alt="Bellatrix – fotografie 6"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
                 </div>
 
+                <div>
+                    <img src="images/VrhB/Bella7.jpg"
+                         alt="Bellatrix – fotografie 7"
+                         class="gallery-lightbox-image"
+                         data-gallery="bellatrix">
+                </div>
+
+                <div>
+                    <img src="images/VrhB/Nov4.PNG"
+                         alt="Bellatrix – fotografie vrhu B"
+                         class="gallery-lightbox-image"
+                         data-gallery="vrh-b">
+                </div>
             </div>
 
         </div>
-
     </section>
 
-
-
     <!-- CONTACT -->
-
     <section class="litter-contact">
-
         <div class="container narrow">
 
-            <p class="section-label">
-                MÁTE ZÁJEM?
-            </p>
+            <p class="section-label">MÁTE ZÁJEM?</p>
 
-            <h2>
-                Bellatrix je stále volná k rezervaci.
-            </h2>
+            <h2>Bellatrix je stále volná k rezervaci.</h2>
 
             <p>
                 Pokud máte zájem o štěňátko Tiny Majesty,
@@ -463,9 +382,7 @@
                 pro vaši rodinu.
             </p>
 
-
             <div class="litter-contact-buttons">
-
                 <a href="kontakt.html" class="btn">
                     Kontaktovat nás
                 </a>
@@ -473,33 +390,210 @@
                 <a href="rezervace.html" class="text-link">
                     Jak probíhá rezervace? →
                 </a>
-
             </div>
 
         </div>
-
     </section>
-
 
 </main>
 
-
-
 <footer class="site-footer">
-
     <div class="container">
-
-        <p>
-            © Tiny Majesty · FCI Pomeranian Kennel
-        </p>
-
+        <p>© Tiny Majesty · FCI Pomeranian Kennel</p>
     </div>
-
 </footer>
 
+<!-- LIGHTBOX -->
+<div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+
+    <button class="gallery-lightbox-close"
+            type="button"
+            aria-label="Zavřít">
+        &times;
+    </button>
+
+    <button class="gallery-lightbox-prev"
+            type="button"
+            aria-label="Předchozí fotografie">
+        &#10094;
+    </button>
+
+    <img class="gallery-lightbox-full" src="" alt="">
+
+    <button class="gallery-lightbox-next"
+            type="button"
+            aria-label="Další fotografie">
+        &#10095;
+    </button>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lightbox = document.getElementById("galleryLightbox");
+    const lightboxImage = lightbox.querySelector(".gallery-lightbox-full");
+    const closeButton = lightbox.querySelector(".gallery-lightbox-close");
+    const prevButton = lightbox.querySelector(".gallery-lightbox-prev");
+    const nextButton = lightbox.querySelector(".gallery-lightbox-next");
+
+    let activeGallery = [];
+    let activeIndex = 0;
+
+    function showImage(index) {
+        if (!activeGallery.length) return;
+
+        activeIndex = (index + activeGallery.length) % activeGallery.length;
+
+        const selected = activeGallery[activeIndex];
+
+        lightboxImage.src = selected.src;
+        lightboxImage.alt = selected.alt || "";
+    }
+
+    function openLightbox(image) {
+        const galleryName = image.dataset.gallery;
+
+        activeGallery = Array.from(
+            document.querySelectorAll(
+                '.gallery-lightbox-image[data-gallery="' + galleryName + '"]'
+            )
+        );
+
+        activeIndex = activeGallery.indexOf(image);
+        showImage(activeIndex);
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("lightbox-open");
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("lightbox-open");
+    }
+
+    document.querySelectorAll(".gallery-lightbox-image").forEach(function (image) {
+        image.addEventListener("click", function () {
+            openLightbox(image);
+        });
+    });
+
+    prevButton.addEventListener("click", function () {
+        showImage(activeIndex - 1);
+    });
+
+    nextButton.addEventListener("click", function () {
+        showImage(activeIndex + 1);
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (!lightbox.classList.contains("is-open")) return;
+
+        if (event.key === "Escape") closeLightbox();
+        if (event.key === "ArrowLeft") showImage(activeIndex - 1);
+        if (event.key === "ArrowRight") showImage(activeIndex + 1);
+    });
+
+});
+</script>
+
+<script>
+/* Automatické načtení údajů Minnie z profilu na feny.html */
+document.addEventListener("DOMContentLoaded", async function () {
+
+    try {
+        const response = await fetch("feny.html");
+
+        if (!response.ok) {
+            throw new Error("Profil fen se nepodařilo načíst.");
+        }
+
+        const html = await response.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+
+        const minnie = Array.from(
+            doc.querySelectorAll(".female-profile")
+        ).find(profile =>
+            profile.querySelector("h2")?.textContent.trim().toLowerCase() === "minnie"
+        );
+
+        if (!minnie) {
+            throw new Error("Profil Minnie nebyl nalezen.");
+        }
+
+        const details = Array.from(
+            minnie.querySelectorAll(".female-details > div")
+        );
+
+        const health = Array.from(
+            minnie.querySelectorAll(".female-health > div")
+        );
+
+        const shows = Array.from(
+            minnie.querySelectorAll(".female-retirement")
+        ).find(item =>
+            item.querySelector("span")?.textContent.trim() === "Výstavní úspěchy"
+        );
+
+        const getDetail = label =>
+            details.find(item =>
+                item.querySelector("span")?.textContent.trim() === label
+            )?.querySelector("strong")?.textContent.trim();
+
+        const setText = (id, value) => {
+            const element = document.getElementById(id);
+
+            if (element && value) {
+                element.textContent = value;
+            }
+        };
+
+        setText("minnie-height", getDetail("Výška"));
+        setText("minnie-birth", getDetail("Datum narození"));
+        setText("minnie-status", getDetail("Status"));
+
+        const healthText = health.map(item => {
+            const label = item.querySelector("span")?.textContent.trim();
+            const value = item.querySelector("strong")?.textContent.trim();
+
+            return label && value ? label + ": " + value : "";
+        }).filter(Boolean).join(", ");
+
+        setText("minnie-health", healthText);
+        setText("minnie-shows", shows?.querySelector("p")?.textContent.trim());
+
+    } catch (error) {
+        console.error("Nepodařilo se načíst údaje Minnie:", error);
+
+        [
+            "minnie-height",
+            "minnie-birth",
+            "minnie-status",
+            "minnie-health",
+            "minnie-shows"
+        ].forEach(id => {
+            const element = document.getElementById(id);
+
+            if (element) {
+                element.textContent = "Údaje najdete v profilu Minnie.";
+            }
+        });
+    }
+
+});
+</script>
 
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
